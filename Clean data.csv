@@ -1,0 +1,418 @@
+﻿Year,Grower,Filed  name,Ph,K,P,Mg,Soil texture,K fert,P fert,Mg fert,Rolling after drilling,Irrigatio ,Pre-emergence Herbicide,Post-emergence Herbicide,Insecticides,Fungicides,Cultiavtions,Drilling date,Harvest date,Variety,Yield,Temp.,Rainfall,Lat,Long
+2018,Benacre Farms,Lakey Hill,7.6,2,4,2,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,14/04/2018,04/07/2018,BG3,5.5,18.6,78.2,52.19383,1.39067
+2018,Benacre Farms,Ravens Rt,7.6,2,4,2,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,14/04/2018,04/07/2018,BG3,5.5,18.6,78.2,52.19383,1.39067
+2020,Benacre Farms,Covehithe Walk,7.7,1,4,2,,90,15,14,,Y, Nirvana," Basagran, Tropotox ", Aphox,,Ploughing,07/04/2020,01/07/2020,GE,6.1,18.1,66.4,52.19383,1.39067
+2019,GL Anderson,"Heater, star",7.62,1,4,2,,90,15,12,N,N, Nirvana," Basagran, Tropotox ","Hallmark Zeon, Aphox ", Amistar,,11/04/2019,,GE,5.7,,,52.80034,1.55076
+2020,FOSTER HARRISON FARMS,GOWARDS EAST,7.5,1,3,1,SCL,0,0,0,Y,N, Nirvana,,"Hallmark Zeon, Decis Protech ",,Ploughing,07/05/2020,22/07/2020,BE,4.3,18.7,105.2,,
+2015,PC Kindred and Son,HWK Triangle,8.1,3,3,3,CL,,,,Y,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive Tillage,22/04/2015,16/07/2015,BG,7,17.7,96.6,52.19383,1.39067
+2017,PC Kindred and Son,Stone House,8.2,3,3,2,CL,,,,Y,, Nirvana,, Aphox, Amistar,Intensive Tillage,30/05/2017,10/08/2017,ST,6,21,116.6,52.19383,1.39067
+2020,PC Kindred and Son,PG Drome,8.3,3,3,3,CL,,,,Y,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive Tillage,30/05/2020,15/08/2020,BA,4.6,21.9,104.2,52.19383,1.39067
+2020,PC Kindred and Son,PG LHS,8.2,3,3,3,CL,,,,Y,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive Tillage,30/05/2020,15/08/2020,BA,4.6,21.9,104.2,52.19383,1.39067
+2020,PC Kindred and Son,Valley,8.1,3,3,4,CL,,,,Y,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive Tillage,31/05/2020,15/08/2020,BA,5.6,21.9,104.2,52.19383,1.39067
+2012,GL Anderson,Star/ Village,7.52,1,3,2,,0,0,12,Y,N,"Glyphosate, Nirvana"," Basagran, Tropotox ","Hallmark Zeon, Aphox ", Amistar,,31/03/2012,15/07/2012,FS,5.2,15.2,350.8,52.80034,1.55076
+2017,GL Anderson,School,7.4,1,3,2,,0,0,15,N,N, Nirvana," Basagran, Tropotox ", , Amistar,,20/04/2017,07/07/2017,AA,7.6,18.6,132,52.80034,1.55076
+2020,GL Anderson,Village / Home,7.52,1,3,2,,90,15,12,N,N, Nirvana," Basagran, Tropotox ",Hallmark Zeon , Amistar,,16/04/2020,09/07/2020,SL,6.6,18.5,80,52.80034,1.55076
+2013,Bedingfield Hall Farms,Webbs,8,3,3,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,08/05/2013,26/07/2013,BG,7.4,17.8,75.7,52.26337,1.21414
+2013,Bedingfield Hall Farms,Darleys,8,3,3,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,09/05/2013,26/07/2013,BG,6.2,17.9,75,52.26337,1.21414
+2019,FG Taylor,Mortimers,8,3,3,2,Clay Loam,0,0,0,Y,N,"Glyphosate, Nirvana", Tropotox, Decis Protech, Amistar,Ploughing,31/05/2019,,NA,5.6,,,52.1439,1.25783
+2013,PC Kindred and Son,57 acres,8.2,3,2,3,CL,,,,Y,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive Tillage,23/05/2013,03/08/2013,E9,4.7,20.1,77,52.19383,1.39067
+2019,PC Kindred and Son,Bottleneck,7.9,2,2,2,CL,,,,Y,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive Tillage,23/05/2019,,NA,4.2,,,52.19383,1.39067
+2015,Bedingfield Hall Farms,9 Acres T,8,2,2,2,CL,,,,Y,N,"Glyphosate, Nirvana", Tropotox,"Hallmark Zeon, Aphox ",,Intensive tillage,12/05/2015,24/07/2015,E9,2.7,19.2,158,52.26337,1.21414
+2016,Bedingfield Hall Farms,Big Box,7.5,4,2,2,CL,,,,Y,N,"Glyphosate, Nirvana", Tropotox,"Hallmark Zeon, Aphox ",,Intensive tillage,09/06/2016,16/08/2016,NA,3.8,21.3,132.8,52.26337,1.21414
+2017,Bedingfield Hall Farms,Kenton Field,7.6,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,04/06/2017,15/08/2017,ST,3.6,21.2,161.2,52.26337,1.21414
+2018,Bedingfield Hall Farms,Broadwater,7.5,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", ,Ploughing,07/06/2018,09/08/2018,ST3,2.4,23.4,52.6,52.26337,1.21414
+2011,Bedingfield Hall Farms,40 Acres,7.8,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,,,,,,,52.26337,1.21414
+2015,FG Taylor,Spinney,8,2,2,2,SCL,0,,,Y,N,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,14/04/2015,11/07/2015,CP,5.9,17.4,66.8,52.1439,1.25783
+2011,FG Taylor,Tyes,8,2,2,1,Clay Loam,25,Pig Muck,,Y,N,"Glyphosate, Nirvana, Centium",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,,,,,,,52.1439,1.25783
+2016,GL Anderson,Whiskers,7.5,1,2,1,,0,0,12,N,N, Nirvana," Basagran, Tropotox ",Hallmark Zeon , ,,14/04/2016,18/07/2016,FS,6,17.1,205.6,52.80034,1.55076
+2018,GL Anderson,Millers,7.6,1,2,1,,0,0,12,N,N, Nirvana," Basagran, Tropotox ","Hallmark Zeon, Aphox, Decis Protech ", ,,22/04/2018,13/07/2018,RL3,3.7,19.7,102.8,52.80034,1.55076
+2011,GL Anderson,Millers,7.6,1,2,1,,0,0,12,N,N,"Glyphosate, Nirvana", ,Hallmark Zeon , Amistar,,,,,,,,52.80034,1.55076
+2016,R.Ellis,bungalow,7.2,2,2,1,SL,,,,N,N,"Nirvana, Centium", Basagran,"Hallmark Zeon, Aphox ",,Ploughing,22/04/2016,18/07/2016,BG,8.5,17.6,136.8,52.76397,1.57433
+2015,Benacre Farms,Stack Yard,7.8,3,2,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,11/03/2015,27/06/2015,PM,8.3,14.7,102.4,52.19383,1.39067
+2018,Benacre Farms,Shed FF,7.9,2,2,2,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,06/04/2018,01/07/2018,BG3,5.3,17.8,85.8,52.19383,1.39067
+2018,Benacre Farms,Tank Trap,7.2,3,2,2,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,15/04/2018,03/07/2018,BG3,5.1,18.6,78.2,52.19383,1.39067
+2020,Benacre Farms,Sir Roberts Walk,7.2,1,2,1,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox,,,07/04/2020,02/07/2020,GB,4.3,18.1,66.4,52.19383,1.39067
+2012,Bedingfield Hall Farms,50 Acres,7.5,3,2,2,CL,,,,Y,N, Nirvana,,Hallmark Zeon ,Thiovit Jet,Intensive tillage,10/06/2012,24/08/2012,GS,3.7,20.3,163.4,52.26337,1.21414
+2016,Bedingfield Hall Farms,Little Box,7.9,2,2,1,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,08/06/2016,16/08/2016,NA,3.2,21.2,132.8,52.26337,1.21414
+2019,Bedingfield Hall Farms,Two Ten,7.5,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana",,, Amistar,Ploughing,31/05/2019,,KM,3.9,,,52.26337,1.21414
+2012,FG Taylor,Kiln Bottoms,7.5,1,2,1,SCL,0,,,Y,N,"Glyphosate, Nirvana",, Aphox," Amistar, Thiovet Jet",Ploughing,06/06/2012,22/08/2012,CE,2.2,20,188.5,52.1439,1.25783
+2013,FG Taylor,Council Huts,8,3,2,2,Clay Loam,0,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,25/04/2013,21/07/2013,AA,7.5,19,108.7,52.1439,1.25783
+2014,FG Taylor,Church,8,2,2,2,SCL,0,40,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,10/04/2014,06/07/2014,CP,3.3,17.2,122.8,52.1439,1.25783
+2020,FG Taylor,Tyes,8,2,2,2,Clay Loam,0,,,Y,N,"Glyphosate, Nirvana",, Decis Protech, Amistar,Ploughing,02/06/2020,15/08/2020,MR,2.9,21.8,76.4,52.1439,1.25783
+2015,GL Anderson,Poplar,7.71,1,2,1,,0,0,12,N,N,"Glyphosate, Nirvana", Laser, , ,,18/03/2015,Not harvested,PR,6.3,,,52.80034,1.55076
+2020,FOSTER HARRISON FARMS,27 ACRES,6.8,2,2,2,SCL,0,0,0,Y,N, Nirvana,,"Hallmark Zeon, Decis Protech ",,Ploughing,07/05/2020,21/07/2020,BE,6.2,18.7,105.2,,
+2020,FOSTER HARRISON FARMS,IVYHOLME,7.4,1,1,2,SCL,0,0,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Decis Protech ",,Ploughing,06/05/2020,21/07/2020,BE,6.4,18.6,105.2,,
+2020,FOSTER HARRISON FARMS,GOWARDS WEST,7.4,1,1,1,SCL,65,78,0,Y,N, Nirvana,,"Hallmark Zeon, Decis Protech ",,Ploughing,07/05/2020,22/07/2020,BE,4.3,18.7,105.2,,
+2013,FG Taylor,Home Field,8,3,1,2,SCL,0,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,22/04/2013,28/07/2013,CP,7,19.1,144,52.1439,1.25783
+2019,CSA,Near Heath,7.1,1,6,3,SL,0,69,0,N,Y, Nirvana, Tropotox, Aphox, Amistar,Non-intensive tillage,20/03/2019,,BT,8,,,52.0712,1.46625
+2019,CSA,Postmans Walk,7,1,6,2,SL,0,69,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,20/03/2019,,BT,5,,,52.0712,1.46625
+2017,CSA,Black Walk,6.4,1,5,3,SL,90,69,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,28/03/2017,25/06/2017,GE,8,17.3,101.8,52.0712,1.46625
+2019,CSA,Pig Heath,7.5,2,5,3,SL,0,69,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,20/03/2019,,BT,8,,,52.0712,1.46625
+2013,Benacre Farms,Garden Field HH,7.8,1,4,1,SL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,24/04/2013,17/07/2013,FS,6.4,16.8,68.5,52.19383,1.39067
+2013,Benacre Farms,TenAc HH,7.8,2,4,2,SL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,24/04/2013,17/07/2013,FS,6,16.8,68.5,52.19383,1.39067
+2014,Benacre Farms,Birds Field,7.6,1,4,1,SL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,10/03/2014,22/06/2014,BT,5.4,15.9,140,52.19383,1.39067
+2014,Benacre Farms,Footpath PkFm,7.7,2,4,2,SCL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,10/03/2014,23/06/2014,BT,5.9,16,142.2,52.19383,1.39067
+2012,CSA,Postmans Walk,6.9,2,4,2,SL,52.18,0,0,N,Y,, Basagran,"Hallmark Zeon, Aphox ", Amistar,"Ploughing, Non-intensive tillage",22/03/2012,08/07/2012,SH,9.1,15,307.5,52.0712,1.46625
+2015,CSA,Great Walks,7.3,2,4,1,SL,89.69,68.76,0,N,Y, Nirvana, Tropotox, Aphox, Amistar,Ploughing,06/04/2015,Not Harvested,CP,6.5,,,52.0712,1.46625
+2016,CSA,Hawthorn Walk,7,1,4,2,SL,102,92,0,N,Y, Nirvana, , Aphox, Amistar,Non-intensive tillage,29/03/2016,03/07/2016,FS,9,15.5,223.2,52.0712,1.46625
+2016,CSA,Two-Tree Walk,6.6,1,4,2,SL,102,92,0,N,Y, Nirvana, , Aphox, Amistar,Non-intensive tillage,29/03/2016,03/07/2016,FS,9,15.5,223.2,52.0712,1.46625
+2017,CSA,Northern Heath,6.9,1,4,3,SL,90,69,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,28/03/2017,25/06/2017,GE,8,17.3,101.8,52.0712,1.46625
+2017,CSA,Suffolk Punch E,6.2,2,4,2,SL,90,69,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,28/03/2017,Not Harvested,GE,6.5,,,52.0712,1.46625
+2017,CSA,Suffolk Punch W,6.1,2,4,2,SL,90,69,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,28/03/2017,Not Harvested,GE,6.5,,,52.0712,1.46625
+2017,CSA,Boyton Walk,7.3,1,4,1,SL,90,69,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,29/03/2017,Not Harvested,LM,5,,,52.0712,1.46625
+2019,CSA,Lourel Farm,7.4,1,4,3,SL,0,98.9,0,N,N,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,21/03/2019,,BT,5.3,,,52.0712,1.46625
+2020,CSA,Bakers Walk,6.6,1,4,2,SL,0,0,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,23/03/2020,22/06/2020,BT,5.2,16.4,50.8,52.0712,1.46625
+2020,CSA,Front Park,7.2,2,4,2,SL,0,0,0,N,N,"Glyphosate, Nirvana", , , ,Non-intensive tillage,24/03/2020,22/06/2020,BT,3.9,16.5,50.8,52.0712,1.46625
+2011,CSA,Black Walk,6.9,1,4,2,SL,0,0,0,N,Y, Nirvana, Basagran, Aphox, ,"Non-intensive tillage, Ploughing",,,,,,,52.0712,1.46625
+2011,CSA,Garden Field,7.1,2,4,2,SL,52.27,0,0,N,Y, Nirvana, Basagran, Aphox, ,"Non-intensive tillage, Ploughing",,,,,,,52.0712,1.46625
+2012,PC Kindred and Son,PG LHS,8.1,3,4,2,CL,,,,Y,, Nirvana,, Aphox, Amistar,Intensive Tillage,01/06/2012,19/08/2012,WX,7.2,19.5,188.5,52.19383,1.39067
+2014,PC Kindred and Son,Waters,8.3,3,4,3,CL,,,,Y,, Nirvana,, Aphox, Amistar,Intensive Tillage,14/05/2014,25/07/2014,BE,8.4,20,161,52.19383,1.39067
+2015,PC Kindred and Son,Stone Farm Block,8.2,3,4,2,CL,,,,Y,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive Tillage,22/04/2015,17/07/2015,BG,8.3,17.7,96.6,52.19383,1.39067
+2016,PC Kindred and Son,Newlands,7.8,3,4,2,CL,,,,Y,, Nirvana,, Aphox, Amistar,Intensive Tillage,10/06/2016,19/08/2016,ST,5.6,21,153.8,52.19383,1.39067
+2012,Porters Farms ,Covey Field,8.05,3,4,2,CL,0,0,0,Y,N,"Glyphosate, Nirvana", ,"Hallmark Zeon, Aphox "," Amistar, Thiovet Jet",Ploughing,17/05/2012,06/08/2012,BG,6.2,18.9,185.8,52.30887,1.46702
+2013,Porters Farms ,Allotment,7.99,2,4,2,CL,0,0,0,Y,N,"Glyphosate, Nirvana", Tropotox,"Hallmark Zeon, Aphox ", Amistar,Ploughing,31/05/2013,12/08/2013,DM,6,20.3,54.1,52.30887,1.46702
+2016,Benacre Farms,Hay Field,8.7,2,4,1,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,06/04/2016,04/08/2016,FS,6.5,17.6,193.8,52.19383,1.39067
+2016,Benacre Farms,Barn Field Fox,7.9,2,4,1,,90,15,14,,, Nirvana,, Aphox, Amistar,Ploughing,07/04/2016,07/07/2016,FS,4.8,16,157.4,52.19383,1.39067
+2016,Benacre Farms,Kiln Barn,7.9,1,4,0,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,07/04/2016,10/07/2016,FS,6.1,16.3,158.6,52.19383,1.39067
+2016,Benacre Farms,Lizers,8,1,4,1,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,07/04/2016,07/07/2016,FS,4.8,16,157.2,52.19383,1.39067
+2016,Benacre Farms,New Ley,7.9,2,4,1,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,08/04/2016,07/07/2016,FS,5,16.1,157.2,52.19383,1.39067
+2017,Benacre Farms,Burnt House,7.7,1,4,1,,90,15,14,,Y,"Glyphosate, Nirvana"," Basagran, Tropotox ", Aphox, Amistar,Ploughing,31/03/2017,29/06/2017,SM,6.8,17.5,116,52.19383,1.39067
+2020,R.Ellis,pitt fld,7.2,1,4,1,SL,,,,Y,N,"Nirvana, Centium"," Basagran, Tropotox","Hallmark Zeon, Aphox ", Amistar,Ploughing,11/04/2020,13/07/2020,WX,9.4,18.3,97.2,52.76397,1.57433
+2012,Benacre Farms,Doulble Hills,7,2,3,1,SCL,90,15,14,Y,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,26/03/2012,15/07/2012,BG,8.4,15.3,350.8,52.19383,1.39067
+2012,Benacre Farms,Guildhall Lane,5.9,2,3,1,SL,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,03/04/2012,17/07/2012,FS,7,15.4,353.1,52.19383,1.39067
+2012,Benacre Farms,Hollybush,6.1,2,3,2,SL,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,03/04/2012,17/07/2012,FS,8.5,15.4,353.1,52.19383,1.39067
+2012,Benacre Farms,Covehithe Walk,7.5,2,3,1,SL,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,08/04/2012,15/07/2012,A4,6.9,15.6,340.4,52.19383,1.39067
+2012,Benacre Farms,Long Field BKFm,8,2,3,1,SL,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,11/04/2012,18/07/2012,FS,5.8,15.8,337.4,52.19383,1.39067
+2012,Benacre Farms,Mound2,7.6,2,3,1,LS,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,11/04/2012,18/07/2012,FS,5.8,15.8,337.4,52.19383,1.39067
+2012,Benacre Farms,Potash,7.6,2,3,1,SCL,90,15,14,Y,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,11/04/2012,16/07/2012,A4,6.5,15.8,336,52.19383,1.39067
+2013,Benacre Farms,Grey Walk,7.8,2,3,2,SL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,22/04/2013,18/07/2013,FS,6.5,16.9,68.5,52.19383,1.39067
+2013,Benacre Farms,Sir Roberts Walk,8,1,3,1,SL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,22/04/2013,21/07/2013,FS,7.4,17,68.5,52.19383,1.39067
+2013,Benacre Farms,Mulleners,7.9,1,3,1,SL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,23/04/2013,19/07/2013,BT,6.4,17,68.5,52.19383,1.39067
+2013,Benacre Farms,New Road,7.9,2,3,1,SL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,23/04/2013,19/07/2013,BT,5.8,17,68.5,52.19383,1.39067
+2014,Benacre Farms,Footpath HFm,7.8,1,3,2,SCL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,10/03/2014,22/06/2014,BT,5.1,15.9,140,52.19383,1.39067
+2014,Benacre Farms,Beamish Hill,7.8,1,3,1,SL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,11/03/2014,23/06/2014,BT,3.7,16,142.2,52.19383,1.39067
+2015,Benacre Farms,Long Field PFm,7,3,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,11/03/2015,26/06/2015,PM,7.3,14.7,102.4,52.19383,1.39067
+2015,Benacre Farms,Light Field,7.3,4,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,12/03/2015,27/06/2015,PM,9,14.8,102.4,52.19383,1.39067
+2015,Benacre Farms,Warren,7.5,2,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,12/03/2015,27/06/2015,PM,8.1,14.8,102.4,52.19383,1.39067
+2011,Benacre Farms,Chalkers,7,2,3,1,SL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,,,,,,,52.19383,1.39067
+2011,Benacre Farms,Easton Field,8.2,1,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,,,,,,,52.19383,1.39067
+2011,Benacre Farms,Home Close,8,1,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,,,,,,,52.19383,1.39067
+2011,Benacre Farms,Weston Field,7.8,1,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,,,,,,,52.19383,1.39067
+2012,CSA,Stable Hill,7,2,3,2,SL,52.18,0,0,N,Y,, Basagran,"Hallmark Zeon, Aphox ", Amistar,"Ploughing, Non-intensive tillage",22/03/2012,08/07/2012,SH,1.6,15,307.5,52.0712,1.46625
+2012,CSA,Pump Walk,7.3,1,3,2,SL,0,52.47,0,N,Y, Nirvana, , Aphox, Amistar,"Ploughing, Non-intensive tillage",23/03/2012,07/07/2012,FS,7,14.9,290.8,52.0712,1.46625
+2012,CSA,Holly Bush,7.3,1,3,1,SL,52.18,0,0,N,Y,, Basagran,"Hallmark Zeon, Aphox ", Amistar,"Ploughing, Non-intensive tillage",27/03/2012,08/07/2012,AN,5.1,14.9,307.5,52.0712,1.46625
+2015,CSA,Mill Field,8.12,1,3,2,SL,50.22,100.43,0,N,N, Nirvana, , Aphox, Amistar,"Ploughing, Non-intensive tillage",12/05/2015,22/07/2015,BG,1.7,19.1,102,52.0712,1.46625
+2016,CSA,Hollesley Walk,7.6,2,3,2,SL,102,92,0,N,Y, Nirvana, , Aphox, Amistar,Non-intensive tillage,29/03/2016,03/07/2016,FS,7.4,15.5,223.2,52.0712,1.46625
+2017,CSA,Foxboro,6.5,2,3,1,SL,55.17,55.17,0,N,Y, Nirvana, , Aphox, Amistar,Ploughing,01/04/2017,Not Harvested,LM,5,,,52.0712,1.46625
+2018,CSA,Field B,7.1,1,3,2,SL,0,0,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, ,Non-intensive tillage,06/04/2018,23/06/2018,GE2,3.4,17.6,65.2,52.0712,1.46625
+2018,CSA,Field C,7.7,1,3,2,SL,0,0,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, ,Non-intensive tillage,06/04/2018,23/06/2018,GE2,3.4,17.6,65.2,52.0712,1.46625
+2018,CSA,Holly Bush,6.9,1,3,2,SL,0,0,0,N,Y, Nirvana, Tropotox, Aphox, ,Non-intensive tillage,09/04/2018,25/06/2018,GE2,3.3,17.9,60.2,52.0712,1.46625
+2018,CSA,Gypsey Hill,7.1,1,3,1,SL,0,0,0,N,Y, Nirvana, Tropotox, Aphox, ,Non-intensive tillage,14/04/2018,29/06/2018,COD1,3.7,18.7,79.4,52.0712,1.46625
+2019,CSA,Brickles,7.5,1,3,3,SL,0,98.9,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,21/03/2019,,BT,5.3,,,52.0712,1.46625
+2019,CSA,Turners Hill,6.9,1,3,3,SL,0,98.9,0,N,N,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,21/03/2019,,BT,5.3,,,52.0712,1.46625
+2020,CSA,Oaks Closure,7.3,1,3,2,SL,0,0,0,N,Y,"Glyphosate, Nirvana"," Basagran, Tropotox ", Aphox, Amistar,Non-intensive tillage,23/03/2020,23/06/2020,GE,4.2,16.5,50.8,52.0712,1.46625
+2020,CSA,Butley School,6.6,1,3,1,SL,0,0,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,24/03/2020,22/06/2020,BT,3.9,16.5,50.8,52.0712,1.46625
+2020,CSA,Capel Lane,7.5,3,3,2,SL,0,0,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,24/03/2020,22/06/2020,BT,3.9,16.5,50.8,52.0712,1.46625
+2020,CSA,Crag Pit,6.6,2,3,3,SL,0,0,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,24/03/2020,22/06/2020,BT,3.9,16.5,50.8,52.0712,1.46625
+2020,CSA,West Park,6.8,2,3,2,SL,0,0,0,N,N,"Glyphosate, Nirvana", , , ,Non-intensive tillage,24/03/2020,22/06/2020,BT,3.9,16.5,50.8,52.0712,1.46625
+2011,CSA,Big Mount,6.5,2,3,2,SL,0,0,0,N,Y, Nirvana, Basagran, Aphox, ,"Non-intensive tillage, Ploughing",,,,,,,52.0712,1.46625
+2011,CSA,Capel Lane,6.7,1,3,1,SL,52.18,0,0,N,Y, Nirvana, Basagran, Aphox, ,"Non-intensive tillage, Ploughing",,,,,,,52.0712,1.46625
+2017,G A TALLOWIN & CO.,JACKS,7,1,3,1,SZL,,,,,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,16/04/2017,06/07/2017,BG,8.8,18.4,108,52.74494,1.58406
+2018,G A TALLOWIN & CO.,BOMB HOLE,7,1,3,1,SZL,,,,,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,09/05/2018,20/07/2018,PS3,6.9,20.4,44.9,52.74494,1.58406
+2020,G A TALLOWIN & CO.,BRACKENBURY,7,1,3,1,SZL,,,,,, Nirvana,, Aphox, Amistar,Ploughing,12/04/2020,12/07/2020,WX,8.7,18.3,96.8,52.74494,1.58406
+2016,Hirst Farms Ltd,Fowlers,6.9,2,3,1.5,SCL,90,,,,N, Nirvana,,"Hallmark Zeon, Aphox "," Amistar, Thiovet Jet","Intensive Tillage, Ploughing",12/04/2016,13/07/2016,FS,6.2,15.7,161.2,52.67993,1.68823
+2014,j&m stammers,CFB,7.1,1,3,1,sl,90,0,0,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,19/03/2014,20/06/2014,SH,7.8,15.8,130,52.33669,1.62934
+2015,j&m stammers,Reydon Hall,6.8,2,3,1,sl,90,0,0,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,16/03/2015,28/06/2015,CG,6.9,15,94.6,52.33669,1.62934
+2016,j&m stammers,Church,6.7,1,3,1,sl,90,0,0,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,07/04/2016,10/07/2016,FS,6,16.3,155.6,52.33669,1.62934
+2017,j&m stammers,Corny,6.9,2,3,1,sl,90,0,0,y,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,31/03/2017,25/06/2017,SM,4.5,17.5,107.8,52.33669,1.62934
+2019,j&m stammers,Brome,7.2,1,3,1,sl,88,0,12,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,04/04/2019,,GE,4.3,,,52.33669,1.62934
+2012,PC Kindred and Son,Poplar Track,8.2,2,3,2,CL,,,,Y,, Nirvana,, Aphox, Amistar,Intensive Tillage,01/06/2012,20/08/2012,WX,7.1,19.6,188.5,52.19383,1.39067
+2013,PC Kindred and Son,Mill and Orchard,8.1,3,3,2,CL,,,,Y,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive Tillage,20/05/2013,15/08/2013,AS,6.5,20,82.9,52.19383,1.39067
+2016,PC Kindred and Son,Hobbles/Brickles,8.3,2,3,2,CL,,,,Y,, Nirvana,, Aphox, Amistar,Intensive Tillage,09/06/2016,19/08/2016,ST,4.9,21,153.8,52.19383,1.39067
+2016,PC Kindred and Son,Rachels,8.2,2,3,2,CL,,,,Y,, Nirvana,, Aphox, Amistar,Intensive Tillage,10/06/2016,19/08/2016,ST,4.9,21,153.8,52.19383,1.39067
+2017,PC Kindred and Son,Little Berring Boy,8,3,3,3,CL,,,,Y,, Nirvana,, Aphox, Amistar,Intensive Tillage,30/05/2017,10/08/2017,ST,6,21,116.6,52.19383,1.39067
+2018,PC Kindred and Son,61 acre,8.3,2,3,2,CL,,,,Y,, Nirvana, Tropotox, Aphox, Amistar,Intensive Tillage,01/06/2018,09/08/2018,MR3,3.4,17.9,80.2,52.19383,1.39067
+2011,PC Kindred and Son,Sessions,8.2,4,3,3,CL,,,,Y,, Nirvana,,, Amistar,Intensive Tillage,,,,,,,52.19383,1.39067
+2011,PC Kindred and Son,Mound,8,3,3,2,CL,,,,Y,, Nirvana,,, Amistar,Intensive Tillage,,,,,,,52.19383,1.39067
+2012,Porters Farms ,Brooms,8,2,3,2,CL,0,0,0,Y,N,"Glyphosate, Nirvana", ,"Hallmark Zeon, Aphox "," Amistar, Thiovet Jet",Ploughing,14/05/2012,06/08/2012,BG,8.2,18.6,202.3,52.30887,1.46702
+2013,Porters Farms ,Old Hill,8.25,3,3,2,CL,0,0,0,Y,N,"Glyphosate, Nirvana", Tropotox,"Hallmark Zeon, Aphox ", Amistar,Ploughing,01/06/2013,11/08/2013,DM,3.1,20.4,54.1,52.30887,1.46702
+2014,Porters Farms ,Back Meadow,7.92,2,3,2,CL,140,36,0,Y,N,"Glyphosate, Nirvana", ,"Hallmark Zeon, Aphox ", Amistar,Ploughing,17/05/2014,28/07/2014,WX,2.5,20.3,146.4,52.30887,1.46702
+2015,Porters Farms ,Yoxford,8.14,2,3,2,CL,0,0,0,Y,N,"Glyphosate, Nirvana", , , Amistar,Ploughing,03/06/2015,15/08/2015,NA,1.2,20.7,153,52.30887,1.46702
+2018,Porters Farms ,Garden Hill,8.08,2,3,1,CL,16,62,0,Y,N,"Glyphosate, Nirvana", ,"Hallmark Zeon, Aphox ", ,Non-intensive tillage,27/05/2018,01/08/2018,NA3,2.6,22.4,25,52.30887,1.46702
+2018,Porters Farms ,Gayfers,8.06,2,3,1,CL,41,152,0,Y,N,"Glyphosate, Nirvana", ,"Hallmark Zeon, Aphox ", ,Non-intensive tillage,28/05/2018,01/08/2018,NA3,3.7,22.4,25,52.30887,1.46702
+2018,Porters Farms ,Open field,8.2,2,3,2,CL,0,0,0,Y,N,"Glyphosate, Nirvana", ,"Hallmark Zeon, Aphox ", ,Non-intensive tillage,28/05/2018,01/08/2018,NA3,3.7,22.4,24,52.30887,1.46702
+2019,Porters Farms ,Pear Tree,7.8,2,3,2,CL,21,78,0,Y,N,"Glyphosate, Nirvana", , , ,Non-intensive tillage,20/05/2019,,COD2,4.5,,,52.30887,1.46702
+2020,Porters Farms ,Brooms,7.8,2,3,2,CL,63,95,0,Y,N,"Glyphosate, Nirvana"," Basagran, Tropotox ", , ," Direct Drilling, Non-intensive",25/05/2020,12/08/2020,KM,5.9,21.6,112.4,52.30887,1.46702
+2020,Porters Farms ,Covey Field,7.8,2,3,2,CL,63,95,0,Y,N,"Glyphosate, Nirvana"," Basagran, Tropotox ", , ," Direct Drilling, Non-intensive",25/05/2020,12/08/2020,KM,5,21.6,112.4,52.30887,1.46702
+2016,Porters Farms ,Grove,8.16,2,3,2,CL,20,75,0,Y,N,"Glyphosate, Nirvana", , Aphox, Amistar,Ploughing,,,,3.8,,,52.30887,1.46702
+2016,Benacre Farms,Eight Ac C,7.8,1,3,0,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,06/04/2016,04/08/2016,FS,6.5,17.6,193.8,52.19383,1.39067
+2016,Benacre Farms,Old Ladies,8.3,1,3,1,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,06/04/2016,04/08/2016,FS,6.5,17.6,193.8,52.19383,1.39067
+2016,Benacre Farms,Weston Field,7.3,1,3,1,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,06/04/2016,09/07/2016,FS,6.5,16.1,160,52.19383,1.39067
+2016,Benacre Farms,Parsonage,7.5,1,3,1,,90,15,14,Y,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,08/04/2016,09/07/2016,FS,5.2,16.2,158.4,52.19383,1.39067
+2017,Benacre Farms,Clay Pit,7.8,1,3,2,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,31/03/2017,27/06/2017,SM,4,17.5,93,52.19383,1.39067
+2017,Benacre Farms,Cottage PkFm,7,1,3,2,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,31/03/2017,27/06/2017,SM,4,17.5,93,52.19383,1.39067
+2017,Benacre Farms,Thirty Three Ac,8.5,1,3,1,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,31/03/2017,26/06/2017,SM,3.6,17.5,93,52.19383,1.39067
+2017,Benacre Farms,Spring Field PkFm,7.5,1,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,01/04/2017,26/06/2017,SM,4.5,17.5,93,52.19383,1.39067
+2017,Benacre Farms,Wood Farn S,7.6,1,3,1,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,01/04/2017,26/06/2017,SM,4.5,17.5,93,52.19383,1.39067
+2017,Benacre Farms,Grey Walk,7.6,1,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,03/04/2017,26/06/2017,SM,4.5,17.6,93,52.19383,1.39067
+2017,Benacre Farms,South Walk,7,1,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,03/04/2017,26/06/2017,SM,4.5,17.6,93,52.19383,1.39067
+2017,Benacre Farms,Eighteen Ac HFm,7,1,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,05/04/2017,26/06/2017,SM,6.5,17.6,92.8,52.19383,1.39067
+2018,Benacre Farms,Barn Jays,7.2,2,3,1,,90,15,14,,Y,"Glyphosate, Nirvana"," Basagran, Tropotox ", Aphox, Amistar,Ploughing,05/04/2018,01/07/2018,BG3,5.9,17.7,86.2,52.19383,1.39067
+2018,Benacre Farms,Cart Shed RHFm,7.3,1,3,0,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,05/04/2018,01/07/2018,BG3,5.9,17.7,86.2,52.19383,1.39067
+2018,Benacre Farms,Stone Hill,7.3,1,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,05/04/2018,01/07/2018,BG3,5.9,17.7,86.2,52.19383,1.39067
+2018,Benacre Farms,EighteenAc Py,7.3,1,3,2,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,13/04/2018,02/07/2018,BG3,4.9,18.4,78.4,52.19383,1.39067
+2018,Benacre Farms,Steamroller,7.4,1,3,2,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,13/04/2018,02/07/2018,BG3,4.9,18.4,78.4,52.19383,1.39067
+2018,Benacre Farms,Front Church Farm ,7.7,2,3,2,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,14/04/2018,04/07/2018,BG3,5.5,18.6,78.2,52.19383,1.39067
+2018,Benacre Farms,Park HH,7.8,2,3,2,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,15/04/2018,02/07/2018,BG3,5.6,18.6,78.2,52.19383,1.39067
+2019,Benacre Farms,Home Close,6.8,1,3,1,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,04/04/2019,,GE,6.4,,,52.19383,1.39067
+2019,Benacre Farms,North Walks,6.7,1,3,1,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,04/04/2019,,GE,6.4,,,52.19383,1.39067
+2019,Benacre Farms,New Road,7.1,2,3,2,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,05/04/2019,,GE,2.4,,,52.19383,1.39067
+2019,Benacre Farms,Covehithe FF,7.1,1,3,2,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,06/04/2019,,RT,5.5,,,52.19383,1.39067
+2019,Benacre Farms,Granary,7,1,3,2,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,06/04/2019,,RT,5.5,,,52.19383,1.39067
+2020,Benacre Farms,Bush Field,8,2,3,2,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox,,,06/04/2020,29/06/2020,LB,3.6,18,66.4,52.19383,1.39067
+2020,Benacre Farms,Dutch Barn,8,3,3,2,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox,,,06/04/2020,29/06/2020,LB,3.6,18,66.4,52.19383,1.39067
+2020,Benacre Farms,Stable Field,8,2,3,2,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox,,,06/04/2020,29/06/2020,LB,6.1,18,66.4,52.19383,1.39067
+2020,Benacre Farms,Marsh Walk,7.7,1,3,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox,,,07/04/2020,01/07/2020,GE,6.1,18.1,66.4,52.19383,1.39067
+2020,Benacre Farms,Potash,7.4,2,3,1,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox,,,08/04/2020,01/07/2020,GE,4.6,18.1,66.4,52.19383,1.39067
+2020,Benacre Farms,Toms FF,7.4,2,3,1,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox,,,08/04/2020,02/07/2020,GE,2.4,18.1,66.4,52.19383,1.39067
+2012,Bedingfield Hall Farms,Hornpie,7.9,3,3,3,CL,,,,Y,N,"Glyphosate, Nirvana",,Hallmark Zeon , Amistar,Intensive tillage,10/06/2012,24/08/2012,GS,4.5,20.3,163.4,52.26337,1.21414
+2019,Bedingfield Hall Farms,40 Acres,7.4,3,3,2,CL,,,,Y,N,"Glyphosate, Nirvana"," Basagran, Tropotox ",Metaldehyde (4), Amistar,Ploughing,31/05/2019,,KM,3.9,,,52.26337,1.21414
+2020,Bedingfield Hall Farms,Hornpie,8.1,3,3,2,CL,,,,Y,N,"Glyphosate, Nirvana",, Aphox, Amistar,,28/05/2020,11/08/2020,KM,4.7,21.3,101.6,52.26337,1.21414
+2012,FG Taylor,Sandpit,8,3,3,1,SCL,0,,,Y,N,"Glyphosate, Nirvana",, Aphox," Amistar, Thiovet Jet",Ploughing,02/06/2012,22/08/2012,AR,4.3,19.6,203.3,52.1439,1.25783
+2012,FG Taylor,Peartree,7.5,2,3,1,SCL,0,,,Y,N,"Glyphosate, Nirvana",, Aphox," Amistar, Thiovet Jet",Ploughing,06/06/2012,22/08/2012,CE,3.5,20,188.5,52.1439,1.25783
+2020,FG Taylor,Sandpit,7.5,2,3,1,SCL,0,,,Y,N,"Glyphosate, Nirvana",, Decis Protech, Amistar,Ploughing,01/06/2020,15/08/2020,BA,3.9,21.8,76.4,52.1439,1.25783
+2020,FG Taylor,Peartree,7.5,2,3,1,SCL,0,,,Y,N,"Glyphosate, Nirvana",, Decis Protech, Amistar,Ploughing,01/06/2020,15/08/2020,BA,3.9,21.8,76.4,52.1439,1.25783
+2011,FG Taylor,Mcmaster,8,2,3,2,Clay Loam,25,Pig Muck,,Y,N,"Glyphosate, Nirvana, Centium",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,,,,,,,52.1439,1.25783
+2013,GL Anderson,church,7.45,1,3,1,,0,0,12,N,N,"Glyphosate, Nirvana, Centium"," Basagran, Tropotox ","Hallmark Zeon, Aphox ", Amistar,,09/04/2013,16/07/2013,FS,5.7,16.6,83.8,52.80034,1.55076
+2012,PH Middleditch,Cedars,8.1,2,3,2,Sand,45,30,0,No,Yes,Glyphosate,,, Amistar,Ploughing,07/04/2012,14/07/2012,A4,7,15.5,338.7,52.44758,1.62572
+2015,PH Middleditch,Campalongs,7.2,2,3,2,Loam,60,60,0,No,Yes,"Glyphosate, Nirvana",,,,Ploughing,13/03/2015,26/06/2015,PM,6.6,14.7,137.8,52.44758,1.62572
+2016,PH Middleditch,9 Acres,6.6,2,3,2,Clay,75,50,0,No,No,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,24/05/2016,05/08/2016,NA,4.9,20,181.8,52.44758,1.62572
+2016,PH Middleditch,22 Acres,7.8,2,3,1,Clay,75,50,0,No,No,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,24/05/2016,05/08/2016,NA,4.9,20,181.8,52.44758,1.62572
+2019,PH Middleditch,6 Acres,7.6,3,3,2,Clay,120,80,0,No,no,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ",,Ploughing,17/05/2019,,BE,5.8,,,52.44758,1.62572
+2011,PH Middleditch,Pumphouse,7.6,2,3,1,Sand,75,50,0,No,Yes,Glyphosate, Basagran,,,Ploughing,,,,,,,52.44758,1.62572
+2017,R.Ellis,stalham rd,6.9,1,3,2,SL,,,,N,N,"Nirvana, Centium",,, Amistar,Ploughing,20/04/2017,07/07/2017,BG,8.1,18.9,140.2,52.76397,1.57433
+2018,R.Ellis,mill piece,7.3,1,3,1,SL,,,,N,N,"Nirvana, Centium",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,09/05/2018,20/07/2018,PS2,5.7,20.3,44.9,52.76397,1.57433
+2019,R.Ellis,whitehorse,6.9,1,3,2,SL,,,,N,N,"Nirvana, Centium",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,19/04/2019,,SL,6.7,,,52.76397,1.57433
+2020,Retreat Farms,Brook Hall,7.58,2,3,2,Clay Loam,152,101,47,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,21/05/2020,06/08/2020,NA,,19,96.6,52.41676,1.41887
+2018,Retreat Farms,Davidsons,8.1,2,3,1,Clay Loam,134,90,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,24/05/2018,29/07/2018,NA,5,22.8,46.4,52.41676,1.41887
+2018,Retreat Farms,Pylon,7.7,2,3,2,Clay Loam,134,90,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,24/05/2018,29/07/2018,NA,2.8,22.8,46.4,52.41676,1.41887
+2016,Retreat Farms,Bunker,8.1,2,3,1,Clay Loam,142,95,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,21/05/2016,01/08/2016,BE,6.9,19,163,52.41676,1.41887
+2015,Retreat Farms,Apple Trees,7.6,2,3,2,Clay Loam,118,89,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,02/06/2015,17/08/2015,NA,6.2,19,117.8,52.41676,1.41887
+2015,Retreat Farms,Bulhams House,7.5,3,3,2,Clay Loam,118,89,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,02/06/2015,14/08/2015,NA,6.2,19,117.6,52.41676,1.41887
+2014,Retreat Farms,Brook Cottage,8,2,3,2,Clay Loam,112,85,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,02/06/2014,12/08/2014,IB,5.5,20.7,98.5,52.41676,1.41887
+2013,Retreat Farms,Heavyland ,7.7,2,3,2,Clay Loam,93,93,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,01/06/2013,08/08/2013,WX,5,20.7,63.5,52.41676,1.41887
+2020,Hirst Farms Ltd,Schol,7.2,3.1,2.8,1.8,SCL,90,,,,N, Nirvana,,"Hallmark Zeon, Aphox "," Amistar, Thiovet Jet","Intensive Tillage, Ploughing",18/04/2020,04/07/2020,NL,5,16.4,74.2,52.67993,1.68823
+2019,Hirst Farms Ltd,Copper,7.2,2.5,2.5,1.3,SCL,90,,,,N, Nirvana,,"Hallmark Zeon, Aphox "," Amistar, Thiovet Jet","Intensive Tillage, Ploughing",08/04/2019,,GE,5.5,,,52.67993,1.68823
+2020,Hirst Farms Ltd,Home Farm,7.1,3,2.5,1.8,SCL,90,,,N,N, Nirvana,,"Hallmark Zeon, Aphox "," Amistar, Thiovet Jet","Intensive Tillage, Ploughing",18/04/2020,04/07/2020,NL,5.3,16.4,74.2,52.67993,1.68823
+2014,Benacre Farms,Big Field,7.2,1,2,1,SL,90,15,14,Y,Y,"Glyphosate, Nirvana"," Basagran, Tropotox ", Aphox, Amistar,Ploughing,11/03/2014,23/06/2014,BT,7.2,16,142.2,52.19383,1.39067
+2014,Benacre Farms,Church Field HH,7,1,2,1,SCL,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,14/03/2014,22/06/2014,BT,4.4,16.1,140,52.19383,1.39067
+2015,Benacre Farms,Ten Ac RHFm,7,3,2,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,11/03/2015,01/07/2015,CG,8.3,15.1,103.6,52.19383,1.39067
+2015,Benacre Farms,Hole Barn,8.2,2,2,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,12/03/2015,27/06/2015,PM,11.1,14.8,102.4,52.19383,1.39067
+2011,Benacre Farms,Sir Thomas Field,7.8,1,2,1,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,,,,,,,52.19383,1.39067
+2015,CSA,Pylon,8.2,1,2,2,SL,50.22,100.43,0,N,N, Nirvana, , Aphox, Amistar,"Ploughing, Non-intensive tillage",12/05/2015,22/07/2015,BG,1.8,19.1,102,52.0712,1.46625
+2020,CSA,Oyster Winn,6.8,1,2,2,SL,0,0,0,N,Y,"Glyphosate, Nirvana", Tropotox, Aphox, Amistar,Non-intensive tillage,24/03/2020,22/06/2020,BT,3.9,16.5,50.8,52.0712,1.46625
+2012,G A TALLOWIN & CO.,EASTHILL,7,1,2,1,SL,,,,,, Nirvana,, Aphox, Amistar,Ploughing,06/04/2012,24/07/2012,BG,11,15.7,347.8,52.74494,1.58406
+2013,G A TALLOWIN & CO.,LUDHAM HILL,7,1,2,1,SL,,,,,, Nirvana,, Aphox, Amistar,Ploughing,18/04/2013,18/07/2013,FS,8.1,16.7,73,52.74494,1.58406
+2014,G A TALLOWIN & CO.,SOUTHILL,7,1,2,1,SL,,,,,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,22/03/2014,25/06/2014,BT,6.6,16.4,150.8,52.74494,1.58406
+2015,G A TALLOWIN & CO.,FOXHOLE,7,1,2,1,SL,,,,,, Nirvana,, Aphox, Amistar,Ploughing,25/03/2015,05/07/2015,BT,5.1,16.2,119,52.74494,1.58406
+2015,G A TALLOWIN & CO.,AIRFIELD,7,1,2,1,SL,,,,,, Nirvana,, Aphox, Amistar,Ploughing,25/03/2015,05/07/2015,BT,5.4,16.2,119,52.74494,1.58406
+2016,G A TALLOWIN & CO.,PRAIRIE,7,1,2,1,SL,,,,,, Nirvana,,"Hallmark Zeon, Aphox ", ,Ploughing,27/05/2016,08/08/2016,CP,5,20.4,115.2,52.74494,1.58406
+2019,G A TALLOWIN & CO.,EASTHILL,7,1,2,1,SL,80,40,,,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,19/04/2019,,SL,8.6,,,52.74494,1.58406
+2016,Hirst Farms Ltd,Dowe Hill,6.7,3,2,1.6,SCL,90,,,,N, Nirvana,,"Hallmark Zeon, Aphox "," Amistar, Thiovet Jet","Intensive Tillage, Ploughing",11/04/2016,13/07/2016,FS,4.7,15.7,161.2,52.67993,1.68823
+2017,Hirst Farms Ltd,Scratby South,6.8,2,2,1.4,SCL,90,,,,N, Nirvana,,"Hallmark Zeon, Aphox "," Amistar, Thiovet Jet","Intensive Tillage, Ploughing",12/04/2017,03/07/2017,FS,6.9,16.9,110.8,52.67993,1.68823
+2018,Hirst Farms Ltd,Frogs Hall,7.1,3,2,1.5,SCL,90,,,,Y, Nirvana,,"Hallmark Zeon, Aphox "," Amistar, Thiovet Jet","Intensive Tillage, Ploughing",22/04/2018,12/07/2018,BG2,6.9,17.9,63.6,52.67993,1.68823
+2019,Hirst Farms Ltd,Copalot,6.8,2,2,1.7,SCL,90,,,,N, Nirvana,,"Hallmark Zeon, Aphox "," Amistar, Thiovet Jet","Intensive Tillage, Ploughing",08/04/2019,,GE,6.1,,,52.67993,1.68823
+2012,j&m stammers,Dell,7.1,1,2,1,sl,90,0,0,n,n, Nirvana,, Aphox,,Ploughing,03/04/2012,12/07/2012,FS,7.6,15.2,321.5,52.33669,1.62934
+2013,j&m stammers,North,7.2,2,2,1,sl,90,0,0,n,n, Nirvana," Basagran, Tropotox ", Aphox, Amistar,Ploughing,18/04/2013,16/07/2013,FS,5.5,16.5,73,52.33669,1.62934
+2013,j&m stammers,Orchard,7.1,2,2,1,sl,90,0,0,n,n, Nirvana," Basagran, Tropotox ", Aphox, Amistar,Ploughing,18/04/2013,15/07/2013,FS,4,16.3,73,52.33669,1.62934
+2014,j&m stammers,7 Acre,7,1,2,1,sl,90,0,0,n,n, Nirvana, Laser,"Hallmark Zeon, Aphox ", Amistar,Ploughing,19/03/2014,21/06/2014,SH,7.8,15.8,130,52.33669,1.62934
+2014,j&m stammers,QLN,6.9,1,2,1,sl,90,0,0,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,19/03/2014,20/06/2014,SH,7.5,15.8,130,52.33669,1.62934
+2018,j&m stammers,Reydon ,6.9,2,2,1,sl,92,0,15,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,16/04/2018,04/07/2018,BG3,5,18.6,78.2,52.33669,1.62934
+2019,j&m stammers,Backhouse,7,1,2,1,sl,88,0,12,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,04/04/2019,,GE,4.3,,,52.33669,1.62934
+2020,j&m stammers,Pit,7.4,1,2,1,sl,90,0,15,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,03/04/2020,27/06/2020,GE,4.6,18,72.2,52.33669,1.62934
+2020,j&m stammers,Dell,7.5,1,2,1,sl,90,0,15,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,03/04/2020,27/06/2020,GE,4.6,18,72.2,52.33669,1.62934
+2020,j&m stammers,Cades,7.6,2,2,1,sl,90,0,15,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,03/04/2020,27/06/2020,GE,4.6,18,72.2,52.33669,1.62934
+2017,j&m stammers,Sprites,6.8,1,2,1,sl,90,60,0,y,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,,,,,,,52.33669,1.62934
+2011,j&m stammers,Backhouse,6.9,1,2,1,sl,90,0,0,n,n, Nirvana, Tropotox, Aphox,,Ploughing,,,,,,,52.33669,1.62934
+2011,j&m stammers,Brome,6.8,1,2,1,sl,90,0,0,n,n, Nirvana, Tropotox, Aphox,,Ploughing,,,,,,,52.33669,1.62934
+2014,PC Kindred and Son,Zebra/Bancocks,8,2,2,3,CL,,,,Y,, Nirvana,, Aphox, Amistar,Intensive Tillage,08/05/2014,24/07/2014,BE,8,19.5,161,52.19383,1.39067
+2019,PC Kindred and Son,Fram Road,8,2,2,2,CL,,,,Y,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive Tillage,23/05/2019,,NA,4.2,,,52.19383,1.39067
+2014,Porters Farms ,Blue Barn,8.3,2,2,2,CL,0,0,0,Y,N,"Glyphosate, Nirvana", ,"Hallmark Zeon, Aphox ", Amistar,Ploughing,17/05/2014,29/07/2014,WX,3.4,20.4,147.4,52.30887,1.46702
+2015,Porters Farms ,Neathouse,8.18,2,2,2,CL,0,0,0,Y,N,"Glyphosate, Nirvana", , , Amistar,Ploughing,03/06/2015,15/08/2015,NA,1.2,20.7,153,52.30887,1.46702
+2019,Porters Farms ,Bellmans Hill,7.9,2,2,2,CL,30,113,0,Y,N,"Glyphosate, Nirvana", , , ,Non-intensive tillage,21/05/2019,,BE,6.1,,,52.30887,1.46702
+2019,Porters Farms ,Bench Hill,8,2,2,2,CL,31,117,0,Y,N,"Glyphosate, Nirvana", , , ,Non-intensive tillage,21/05/2019,,BE,6.1,,,52.30887,1.46702
+2016,Benacre Farms,Carrot Marshland,7.4,1,2,1,,90,15,14,,,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,08/04/2016,09/07/2016,FS,5.2,16.2,158.4,52.19383,1.39067
+2014,Bedingfield Hall Farms,Broadlands,8,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,15/04/2014,10/07/2014,BG,6.1,17.6,154.8,52.26337,1.21414
+2014,Bedingfield Hall Farms,Rookery,8,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,15/04/2014,10/07/2014,BG,6.1,17.6,154.8,52.26337,1.21414
+2015,Bedingfield Hall Farms,16 Acres T,8,2,2,1,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,12/05/2015,25/07/2015,E9,6.9,19.2,159,52.26337,1.21414
+2015,Bedingfield Hall Farms,25 Acres,8,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana", Tropotox,"Hallmark Zeon, Aphox ",,Intensive tillage,13/05/2015,25/07/2015,E9,3.9,19.2,158,52.26337,1.21414
+2015,Bedingfield Hall Farms,Cherry Field,8,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana", Tropotox,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,13/05/2015,24/07/2015,E9,3.7,19.3,158,52.26337,1.21414
+2017,Bedingfield Hall Farms,Coles,7.8,2,2,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,04/06/2017,15/08/2017,ST,3,21.2,161.2,52.26337,1.21414
+2017,Bedingfield Hall Farms,Banks Hill,7.8,2,2,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,04/06/2017,15/08/2017,ST,3.6,21.2,161.2,52.26337,1.21414
+2019,Bedingfield Hall Farms,Back Meadow,7,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana"," Basagran, Tropotox ",, Amistar,Ploughing,31/05/2019,,KM,3.9,,,52.26337,1.21414
+2011,Bedingfield Hall Farms,Two Ten,7.8,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,,,,,,,52.26337,1.21414
+2011,Bedingfield Hall Farms,Back Meadow,7.9,3,2,2,CL,,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,,,,,,,52.26337,1.21414
+2012,FG Taylor,Dial Post,8,2,2,2,SCL,0,,,Y,N,"Glyphosate, Nirvana",, Aphox," Amistar, Thiovet Jet",Ploughing,02/06/2012,22/08/2012,AR,2.9,19.6,203.3,52.1439,1.25783
+2013,FG Taylor,7 Gardens,8,3,2,2,SCL,0,,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,22/04/2013,28/07/2013,AA,5,19.1,144,52.1439,1.25783
+2014,FG Taylor,Woodrows,7.5,2,2,2,SCL,0,40,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,08/04/2014,07/07/2014,CP,3.3,17.1,123,52.1439,1.25783
+2014,FG Taylor,Joes Pytle,8,2,2,2,SCL,0,40,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,10/04/2014,06/07/2014,CP,4,17.2,122.8,52.1439,1.25783
+2014,FG Taylor,Swiss Farm,8,2,2,2,SCL,,100,,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,11/04/2014,08/07/2014,BG,2.3,17.3,138.8,52.1439,1.25783
+2020,FG Taylor,Kiln Bottoms,8,2,2,2,SCL,0,,,Y,N,"Glyphosate, Nirvana",, Decis Protech, Amistar,Ploughing,01/06/2020,15/08/2020,BA,3.9,21.8,76.4,52.1439,1.25783
+2020,FG Taylor,Mcmaster,8,2,2,2,Clay Loam,0,,,Y,N,"Glyphosate, Nirvana",, Decis Protech, Amistar,Ploughing,02/06/2020,15/08/2020,MR,2.9,21.8,76.4,52.1439,1.25783
+2012,PH Middleditch,Pitfield,7.8,2,2,2,Clay Loam,75,50,0,No,No, Nirvana,,, Amistar,Ploughing,29/03/2012,17/07/2012,BG,7.1,15.4,353.1,52.44758,1.62572
+2013,PH Middleditch,34 Acres,7.4,2,2,2,Clay Loam,75,50,0,No,No,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,03/06/2013,15/08/2013,AR,4.6,20.7,63.8,52.44758,1.62572
+2014,PH Middleditch,16 Acres,5.9,2,2,2,Clay,72,48,0,No,No,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,06/06/2014,14/08/2014,NA,9.5,21.6,163,52.44758,1.62572
+2014,PH Middleditch,22 Acres,6.3,2,2,2,Clay,72,48,0,No,No,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,06/06/2014,14/08/2014,NA,8,21.6,163,52.44758,1.62572
+2016,PH Middleditch,Wood Field,6.3,2,2,2,Clay,75,50,0,No,No,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,24/05/2016,05/08/2016,NA,4.9,20,181.8,52.44758,1.62572
+2017,PH Middleditch,43 Acres,6.6,2,2,2,Clay,75,50,0,No,No,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,26/05/2017,01/08/2017,BE2,6.3,21.6,115,52.44758,1.62572
+2019,PH Middleditch,17 Acres,7.2,2,2,2,Clay,120,80,0,No,no,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ",,Ploughing,17/05/2019,,BE,5.8,,,52.44758,1.62572
+2019,PH Middleditch,16 Acres,7.5,2,2,2,Clay,120,80,0,No,no,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ",,Ploughing,17/05/2019,,BE,5.8,,,52.44758,1.62572
+2019,Retreat Farms,Airfield,8.1,2,2,1,Clay Loam,182,121,57,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,12/05/2019,,RL,5.2,,,52.41676,1.41887
+2019,Retreat Farms,Corner 10,7.9,2,2,1,Clay Loam,182,121,57,Y,N,"Glyphosate, Nirvana"," Basagran, Tropotox","Hallmark Zeon, Aphox ", Amistar,Ploughing,12/05/2019,,RL,5.2,,,52.41676,1.41887
+2019,Retreat Farms,Starnacre,7.7,2,2,1,Clay Loam,182,121,57,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,12/05/2019,,RL,5.2,,,52.41676,1.41887
+2018,Retreat Farms,Cargills,7.7,2,2,2,Clay Loam,134,90,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,24/05/2018,29/07/2018,NA,5,22.8,46.4,52.41676,1.41887
+2014,Retreat Farms,Harp,7.9,2,2,1,Clay Loam,112,85,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,02/06/2014,12/08/2014,BU,7.3,20.7,98.5,52.41676,1.41887
+2013,Retreat Farms,St Peters Hill,7.9,3,2,2,Clay,93,93,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,01/06/2013,07/08/2013,WX,4.2,20.7,63.5,52.41676,1.41887
+2012,Retreat Farms,Spectacles,7.9,2,2,2,Clay Loam,75,75,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,17/05/2012,08/08/2012,BE,8.6,18.3,224.3,52.41676,1.41887
+2011,Retreat Farms,Pylon,7.7,2,2,2,Clay Loam,80,80,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,,,,,,,52.41676,1.41887
+2011,Retreat Farms,Retreat,7.7,2,2,1,Clay Loam,80,80,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,,,,,,,52.41676,1.41887
+2015,Benacre Farms,Hall Field PFm,8.2,3,1,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,10/03/2015,30/06/2015,CG,8.5,14.9,103.6,52.19383,1.39067
+2013,CSA,Chittocks,8.1,2,1,2,SL,39.31,80.71,0,Y,N,, Tropotox,"Hallmark Zeon, Aphox ", Amistar,Ploughing,16/05/2013,01/08/2013,AS,4.9,19.3,74.9,52.0712,1.46625
+2013,CSA,Beside Cart,8.4,1,1,2,SL,39.31,80.71,0,Y,N,, Tropotox,"Hallmark Zeon, Aphox ", Amistar,Ploughing,17/05/2013,01/08/2013,BE,6.1,19.4,74.9,52.0712,1.46625
+2015,CSA,47 Acres,8,1,1,2,SL,50.22,100.43,0,N,N, Nirvana, , Aphox, Amistar,"Ploughing, Non-intensive tillage",11/05/2015,22/07/2015,BG,0.6,19.1,102,52.0712,1.46625
+2015,CSA,Behind Stack,8.2,1,1,2,SL,50.22,100.43,0,N,N, Nirvana, , Aphox, Amistar,"Ploughing, Non-intensive tillage",11/05/2015,23/07/2015,BG,1.7,19.1,102,52.0712,1.46625
+2011,CSA,Clay Pits,8.3,2,1,2,SL,0,0,0,N,N,Glyphosate, ,"Hallmark Zeon, Aphox ", ,Ploughing,,,,,,,52.0712,1.46625
+2012,j&m stammers,Pit,7,1,1,1,sl,90,40,0,n,n, Nirvana,, Aphox,,Ploughing,03/04/2012,12/07/2012,FS,7.6,15.2,321.5,52.33669,1.62934
+2018,j&m stammers,Scotty,6.7,1,1,1,sl,92,0,15,n,n, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Ploughing,16/04/2018,04/07/2018,BG3,5,18.6,78.2,52.33669,1.62934
+2014,Porters Farms ,Wilby Field,8,3,1,2,CL,0,0,0,Y,N,"Glyphosate, Nirvana", ,"Hallmark Zeon, Aphox ", Amistar,Ploughing,19/05/2014,01/08/2014,WX,5,20.5,142.4,52.30887,1.46702
+2015,Porters Farms ,Poplars,8.32,2,1,2,CL,0,0,0,Y,N,"Glyphosate, Nirvana", , Aphox, Amistar,Ploughing,03/06/2015,15/08/2015,NA,1.2,20.7,153,52.30887,1.46702
+2018,Benacre Farms,Butchers,7.7,2,1,2,,90,15,14,Y,Y,"Glyphosate, Nirvana"," Basagran, Tropotox ", Aphox, Amistar,Ploughing,06/04/2018,02/07/2018,BG3,6.8,17.9,85.8,52.19383,1.39067
+2020,Bedingfield Hall Farms,Side Lane,6.9,2,1,1,CL,,,,Y,N,"Glyphosate, Nirvana",, Aphox, Amistar,,28/05/2020,13/08/2020,KM,5.1,21.3,101.6,52.26337,1.21414
+2019,FG Taylor,Clopton Church,7,3,1,1.7,Clay Loam,90,80,75,Y,N,"Glyphosate, Nirvana",, Decis Protech, Amistar,Ploughing,31/05/2019,,NA,5.8,,,52.1439,1.25783
+2015,PH Middleditch,14 Acres,6.3,1,1,2,Loam,60,60,0,No,Yes,"Glyphosate, Nirvana",,,,Ploughing,12/03/2015,26/06/2015,PM,8,14.7,137.8,52.44758,1.62572
+2015,PH Middleditch,12 Acres,6.8,1,1,2,Loam,60,60,0,No,Yes,"Glyphosate, Nirvana",,,,Ploughing,13/03/2015,26/06/2015,PM,5.3,14.7,137.8,52.44758,1.62572
+2018,PH Middleditch,33 Acres,7.1,2,1,2,Clay,75,50,0,No,No,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,24/05/2018,29/07/2018,NA3,2.4,22.3,99.6,52.44758,1.62572
+2020,PH Middleditch,16 Acres,6.7,2,1,2,Clay,90,60,0,Y,no,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,25/05/2020,09/08/2020,DN,3.8,21.2,83.2,52.44758,1.62572
+2020,PH Middleditch,22 Acres,7.3,2,1,2,Clay,90,60,0,Y,no,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,25/05/2020,09/08/2020,DN,3.8,,83.2,52.44758,1.62572
+2020,Retreat Farms,Long 14,7.6,2,1,1,Clay Loam,152,101,47,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,,,,,,,52.41676,1.41887
+2020,Retreat Farms,Middle Block 37,7.3,2,1,1,Clay Loam,152,101,47,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,20/05/2020,,NA,8.9,,,52.41676,1.41887
+2017,Retreat Farms,Hattons,8.1,2,1,1,Clay Loam,155,103,0,Y,N,"Glyphosate, Nirvana",,"Hallmark Zeon, Aphox ", Amistar,Ploughing,24/05/2017,28/07/2017,BE2,6.4,20,114,52.41676,1.41887
+2015,Benacre Farms,Sixteen Ac PFm,7.6,3,2,1,,90,15,14,Y,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,10/03/2015,29/06/2015,CG,6.5,14.8,103.6,52.19383,1.39067
+2015,Benacre Farms,Kale Field,7.9,3,2,1,,90,15,14,,Y,"Glyphosate, Nirvana",, Aphox, Amistar,Ploughing,11/03/2015,01/07/2015,CG,10.6,15.1,103.6,52.19383,1.39067
+2011,CSA,Mallons Heavy,,,,,,0,0,0,N,N,Glyphosate, ,"Hallmark Zeon, Aphox ", ,Ploughing,,,,,,,52.0712,1.46625
+2016,Porters Farms ,Scrapings,,,,,CL,,,,Y,N,"Glyphosate, Nirvana", , Aphox, Amistar,Ploughing,27/05/2016,08/08/2016,NA,4.8,20.4,157,52.30887,1.46702
+2020,Hardingham Farms Ltd.,Brittle Grove,,,,,,94,0,66,,,"Glyphosate, Nirvana"," Basagran, Tropotox ","Hallmark Zeon, Aphox ", Amistar,,05/05/2020,18/07/2020,BE,7.3,19.6,110.6,52.3984,1.49641
+2020,Hardingham Farms Ltd.,Green Farm,,,,,,36,0,66,,, Nirvana," Basagran, Tropotox ","Hallmark Zeon, Aphox ", Amistar,,05/05/2020,18/07/2020,BE,7.3,19.6,110.6,52.3984,1.49641
+2020,Hardingham Farms Ltd.,Kimberley Crossing,,,,,,11,0,66,,, Nirvana," Basagran, Tropotox ","Hallmark Zeon, Aphox ", Amistar,,05/05/2020,18/07/2020,BE,7.3,19.6,110.6,52.3984,1.49641
+2020,Hardingham Farms Ltd.,Back Drive,,,,,,69,0,27,,,"Glyphosate, Nirvana"," Basagran, Tropotox ","Hallmark Zeon, Aphox ", Amistar,,06/05/2020,19/07/2020,BE,6.5,19.7,113.6,52.3984,1.49641
+2020,Hardingham Farms Ltd.,Motts Meadow,,,,,,50,0,66,,,"Glyphosate, Nirvana"," Basagran, Tropotox ","Hallmark Zeon, Aphox ", Amistar,,06/05/2020,19/07/2020,BE,6.2,19.7,113.6,52.3984,1.49641
+2020,Hardingham Farms Ltd.,Railway,,,,,,31,0,66,,,"Glyphosate, Nirvana"," Basagran, Tropotox ","Hallmark Zeon, Aphox ", Amistar,,06/05/2020,19/07/2020,BE,6.2,19.7,113.6,52.3984,1.49641
+2020,Hardingham Farms Ltd.,Up Lane,,,,,,77,0,66,,,"Glyphosate, Nirvana"," Basagran, Tropotox ","Hallmark Zeon, Aphox ", Amistar,,06/05/2020,19/07/2020,BE,6.5,19.7,113.6,52.3984,1.49641
+2012,Home Farm Nacton,118 Capel,,,,,,,,,,N,, Basagran,,,Intensive tillage,13/03/2012,03/07/2012,SH,9.8,14.5,289,52.01586,1.23347
+2012,Home Farm Nacton,114 Council,,,,,,8,6,2,,N,, Basagran,,,Intensive tillage,14/03/2012,04/07/2012,SH,10.6,14.7,291.1,52.01586,1.23347
+2012,Home Farm Nacton,Bob Ramsey_070 Pit,,,,,,8,6,2,,N,, Basagran,,,Intensive tillage,15/03/2012,05/07/2012,SH,11.3,14.8,291.1,52.01586,1.23347
+2013,Home Farm Nacton,154 Rectangle,,,,,,8,76,51,,Y,, Basagran,,Thiovit Jet,Intensive tillage,06/03/2013,07/07/2013,BT,5.2,12.8,236.8,52.01586,1.23347
+2013,Home Farm Nacton,109 Purdis,,,,,,3,25,17,,Y,, Basagran,,Thiovit Jet,Intensive tillage,07/03/2013,11/07/2013,BT,6.3,13.1,236.8,52.01586,1.23347
+2013,Home Farm Nacton,053 Buckl.Road,,,,,,8,76,51,,Y,, Basagran,,Thiovit Jet,Intensive tillage,02/04/2013,12/07/2013,BT,5.4,15.6,214.4,52.01586,1.23347
+2013,Home Farm Nacton,001 Bridge,,,,,,64,104,57,,Y,, Basagran,,Thiovit Jet,Intensive tillage,03/04/2013,12/07/2013,SH,5.3,15.7,214.4,52.01586,1.23347
+2013,Home Farm Nacton,113 Oaklands,,,,,,0,0,0,,Y, Nirvana,,,Thiovit Jet,Intensive tillage,04/04/2013,12/07/2013,SH,6.2,15.9,214.4,52.01586,1.23347
+2013,Home Farm Nacton,130 Richards Croft,,,,,,0,0,0,,N,, Basagran,,Thiovit Jet,Intensive tillage,04/04/2013,11/07/2013,SH,7.4,16,209.6,52.01586,1.23347
+2014,Home Farm Nacton,085 W. Road,,,,,,,,,,,,,,,,28/03/2014,03/07/2014,CP,7,16.8,149.4,52.01586,1.23347
+2014,Home Farm Nacton,094 Williss,,,,,,,,,,,,,,,,28/03/2014,01/07/2014,CP,7.6,16.7,149.4,52.01586,1.23347
+2014,Home Farm Nacton,B14 Waller,,,,,,,,,,,,,,,,29/03/2014,02/07/2014,CP,7.4,16.8,149.4,52.01586,1.23347
+2014,Home Farm Nacton,025b 80 Acres,,,,,,,,,,,,,,,,30/03/2014,01/07/2014,CP,7.5,16.7,149.4,52.01586,1.23347
+2014,Home Farm Nacton,068 Heath,,,,,,,,,,,,,,,,30/03/2014,04/07/2014,CP,7.7,17,149.6,52.01586,1.23347
+2014,Home Farm Nacton,134  Whinney,,,,,,,,,,,,,,,,01/04/2014,02/07/2014,FS,8.3,16.8,149.4,52.01586,1.23347
+2014,Home Farm Nacton,Bills Home A,,,,,,,,,,,,,,,,03/04/2014,01/07/2014,CP,4.3,16.7,143.2,52.01586,1.23347
+2014,Home Farm Nacton,Brooms Field,,,,,,,,,,,,,,,,04/04/2014,01/07/2014,CP,6.1,16.8,143.2,52.01586,1.23347
+2015,Home Farm Nacton,B06 White Post,,,,,,,,,,,,,,,,24/03/2015,02/07/2015,BT,6.3,15.7,73,52.01586,1.23347
+2015,Home Farm Nacton,250 Kell,,,,,,,,,,,,,,,,25/03/2015,Not harvested,BT,7.5,,,52.01586,1.23347
+2015,Home Farm Nacton,002 Prettymans,,,,,,,,,,,,,,,,27/03/2015,03/07/2015,BT,7.6,16,67.4,52.01586,1.23347
+2015,Home Farm Nacton,046 Lineside,,,,,,,,,,,,,,,,27/03/2015,03/07/2015,BT,7.6,16,67.4,52.01586,1.23347
+2015,Home Farm Nacton,283P Long Walk,,,,,,,,,,,,,,,,30/03/2015,03/07/2015,BT,6.7,16.1,57.6,52.01586,1.23347
+2015,Home Farm Nacton,284P Dunns (East),,,,,,,,,,,,,,,,30/03/2015,03/07/2015,BT,6.9,16.1,57.6,52.01586,1.23347
+2015,Home Farm Nacton,102 Coots,,,,,,,,,,,,,,,,31/03/2015,04/07/2015,BT,7.5,16.3,62.8,52.01586,1.23347
+2016,Home Farm Nacton,C08 Magdalene,,,,,,,,,,,,,,,,15/03/2016,01/07/2016,BT,3.1,14.7,236.4,52.01586,1.23347
+2016,Home Farm Nacton,C09 Mortimer,,,,,,,,,,,,,,,,15/03/2016,30/06/2016,GE,5.2,14.6,236,52.01586,1.23347
+2016,Home Farm Nacton,047 Puttis Hole,,,,,,,,,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,16/03/2016,02/07/2016,BT,5.4,14.8,239.4,52.01586,1.23347
+2016,Home Farm Nacton,C11 Chapel/ Candlet,,,,,,,,,,,,,,,,17/03/2016,03/07/2016,GE,5.2,14.9,239.4,52.01586,1.23347
+2016,Home Farm Nacton,G08 Alston,,,,,,,,,,,,,,,,18/03/2016,30/06/2016,BT,5.3,14.8,236,52.01586,1.23347
+2016,Home Farm Nacton,289P 18 acres,,,,,,128,6,2,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,20/03/2016,02/07/2016,BT,7.6,15.1,239.4,52.01586,1.23347
+2016,Home Farm Nacton,290P Luckings,,,,,,128,6,2,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,20/03/2016,02/07/2016,BT,7.6,15.1,239.4,52.01586,1.23347
+2016,Home Farm Nacton,B02 Ashtree,,,,,,8,76,51,,,"Glyphosate, Centium",,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,21/03/2016,01/07/2016,BT,6.4,15.1,236.2,52.01586,1.23347
+2016,Home Farm Nacton,B10 Newbourne,,,,,,206,6,93,,,"Glyphosate, Centium",,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,21/03/2016,01/07/2016,IV,6.1,15.1,236.2,52.01586,1.23347
+2017,Home Farm Nacton,T23 Granary Bottom,,,,,,,,,,,,,,,,17/03/2017,19/06/2017,BT,6.5,16.2,128.4,52.01586,1.23347
+2017,Home Farm Nacton,T24 Granary Mid,,,,,,,,,,,,,,,,17/03/2017,19/06/2017,BT,6.5,16.2,128.4,52.01586,1.23347
+2017,Home Farm Nacton,T25 Granary Field,,,,,,,,,,,,,,,,17/03/2017,19/06/2017,BT,6.5,16.2,128.4,52.01586,1.23347
+2017,Home Farm Nacton,Dutch Barns,,,,,,132,,,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,18/03/2017,22/06/2017,BT,8.4,16.5,128.6,52.01586,1.23347
+2017,Home Farm Nacton,101 27 Acres,,,,,,8,76,2,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,21/03/2017,22/06/2017,GE,7.4,16.6,116.6,52.01586,1.23347
+2017,Home Farm Nacton,Council,,,,,,186,121,,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,21/03/2017,23/06/2017,BN,8.2,16.7,116.6,52.01586,1.23347
+2017,Home Farm Nacton,School Field,,,,,,,,,,,,,Hallmark Zeon , Amistar,,21/03/2017,22/06/2017,GE,7.6,16.6,116.6,52.01586,1.23347
+2017,Home Farm Nacton,295P 16 acs,,,,,,,,,,,Centium, Basagran,"Hallmark Zeon, Decis Protech ", Amistar,Non-intensive tillage,22/03/2017,23/06/2017,GE,8.1,16.7,116.6,52.01586,1.23347
+2017,Home Farm Nacton,296P Long Walk/ Hemley,,,,,,,,,,,Centium, Basagran,"Hallmark Zeon, Decis Protech ", Amistar,Non-intensive tillage,22/03/2017,23/06/2017,GE,8.1,16.7,116.6,52.01586,1.23347
+2017,Home Farm Nacton,297P Barn/ Hemley,,,,,,,,,,,Centium, Basagran,"Hallmark Zeon, Decis Protech ", Amistar,Non-intensive tillage,22/03/2017,23/06/2017,GE,8.1,16.7,116.6,52.01586,1.23347
+2017,Home Farm Nacton,298P Herons,,,,,,,,,,,Centium, Basagran,"Hallmark Zeon, Decis Protech ", Amistar,Non-intensive tillage,22/03/2017,23/06/2017,GE,8.1,16.7,116.6,52.01586,1.23347
+2017,Home Farm Nacton,B04 Thompsons Wood,,,,,,109,76,2,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,22/03/2017,20/06/2017,GE,4.9,16.5,116.4,52.01586,1.23347
+2017,Home Farm Nacton,B05 Walnut Tree,,,,,,212,76,2,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,22/03/2017,20/06/2017,GE,4.9,16.5,116.4,52.01586,1.23347
+2017,Home Farm Nacton,B30 Sheepdrift,,,,,,8,76,2,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,22/03/2017,21/06/2017,GE,6.3,16.6,116.4,52.01586,1.23347
+2017,Home Farm Nacton,G05 Alston Cranmer,,,,,,,,,,,,,,,Non-intensive tillage,16/03/2017,20/06/2017,BT,7.9,16.3,128.4,52.01586,1.23347
+2018,Home Farm Nacton,012 Palmers,,,,,,40,40,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,20/03/2018,20/06/2018,BT1,6.3,16.3,102,52.01586,1.23347
+2018,Home Farm Nacton,016 Lady Wood,,,,,,,,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,22/03/2018,20/06/2018,BT1,7.9,16.5,101.4,52.01586,1.23347
+2018,Home Farm Nacton,023 High Field,,,,,,40,40,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,22/03/2018,20/06/2018,BT1,7.9,16.5,101.4,52.01586,1.23347
+2018,Home Farm Nacton,073 Allotment,,,,,,,,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,23/03/2018,23/06/2018,BT1,4.3,16.6,100.6,52.01586,1.23347
+2018,Home Farm Nacton,111 Bungalow,,,,,,,,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,23/03/2018,21/06/2018,BT1,6.6,16.5,100.6,52.01586,1.23347
+2018,Home Farm Nacton,12 Acre,,,,,,,,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,23/03/2018,23/06/2018,BT1,4.3,16.6,100.6,52.01586,1.23347
+2018,Home Farm Nacton,154 Rectangle,,,,,,40,40,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,23/03/2018,21/06/2018,BT1,6.6,16.5,100.6,52.01586,1.23347
+2018,Home Farm Nacton,Allotment,,,,,,,,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,23/03/2018,23/06/2018,BT1,4.3,16.6,100.6,52.01586,1.23347
+2018,Home Farm Nacton,070 Pit,,,,,,,,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,24/03/2018,23/06/2018,BT1,5.2,16.7,100.6,52.01586,1.23347
+2018,Home Farm Nacton,152 Monument,,,,,,,,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,24/03/2018,21/06/2018,BT1,4.9,16.6,100.6,52.01586,1.23347
+2018,Home Farm Nacton,B07 Brightwell School Field,,,,,,,80,56,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,25/03/2018,24/06/2018,BT1,5.9,16.8,100.6,52.01586,1.23347
+2018,Home Farm Nacton,B26 Big/Steels Field,,,,,,,80,56,,Y,Centium," Basagran, Tropotox","Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,25/03/2018,24/06/2018,BT1,5.9,16.8,100.6,52.01586,1.23347
+2018,Home Farm Nacton,306P Garden Field,,,,,,,,,,,Centium," Basagran, Tropotox","Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,26/03/2018,21/06/2018,BT1,5.4,16.7,100.6,52.01586,1.23347
+2018,Home Farm Nacton,307P 11acs,,,,,,,,,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,26/03/2018,21/06/2018,BT1,5.4,16.7,100.6,52.01586,1.23347
+2018,Home Farm Nacton,B11 Big Walk,,,,,,,80,56,,Y,Centium, Basagran,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,26/03/2018,22/06/2018,BT1,7.1,16.8,100.6,52.01586,1.23347
+2018,Home Farm Nacton,B29 Brightwell Chapel,,,,,,44,102,69,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,26/03/2018,21/06/2018,BT1,7.8,16.7,100.6,52.01586,1.23347
+2018,Home Farm Nacton,T28 Great,,,,,,,,,,,,,,,,05/04/2018,21/06/2018,IV1,5.4,17.7,66.6,52.01586,1.23347
+2018,Home Farm Nacton,049 Nacton Walk,,,,,,,,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,06/04/2018,22/06/2018,IV1,6.1,17.8,66.6,52.01586,1.23347
+2018,Home Farm Nacton,050 Middle Walk,,,,,,,,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,06/04/2018,22/06/2018,IV1,6.1,17.8,66.6,52.01586,1.23347
+2018,Home Farm Nacton,051 Lev Walk,,,,,,,,,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,06/04/2018,22/06/2018,IV1,6.1,17.8,66.6,52.01586,1.23347
+2018,Home Farm Nacton,003 Decoy,,,,,,8,6,2,,Y,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,07/04/2018,22/06/2018,IV,6.4,17.8,66.6,52.01586,1.23347
+2019,Home Farm Nacton,027 X Paths,,,,,,,,,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,25/02/2019,20/06/2019,AL,9.2,14.2,169.6,52.01586,1.23347
+2019,Home Farm Nacton,028 Foxes Drift,,,,,,,,,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,25/02/2019,20/06/2019,AL,9.2,14.2,169.6,52.01586,1.23347
+2019,Home Farm Nacton,157 Desert,,,,,,,,,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,27/02/2019,21/06/2019,AL,6.8,14.2,169.6,52.01586,1.23347
+2019,Home Farm Nacton,085 W. Road,,,,,,,,,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,28/02/2019,21/06/2019,BN,6.4,14.2,169.6,52.01586,1.23347
+2019,Home Farm Nacton,109 Purdis,,,,,,,70,49,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,28/02/2019,,AL,9,,,52.01586,1.23347
+2019,Home Farm Nacton,110 Water Works,,,,,,,,,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,28/02/2019,,AL,7.1,,,52.01586,1.23347
+2019,Home Farm Nacton,281P  Folly,,,,,,,,,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,28/02/2019,21/06/2019,BN,6.4,14.2,169.6,52.01586,1.23347
+2019,Home Farm Nacton,B13 Long Park North,,,,,,,80,56,,,Centium,,Hallmark Zeon , Amistar,Non-intensive tillage,28/02/2019,,BN,5.6,,,52.01586,1.23347
+2019,Home Farm Nacton,007 Bunafords,,,,,,,10,7,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,01/03/2019,17/06/2019,BN,5.4,14,156.2,52.01586,1.23347
+2019,Home Farm Nacton,G09 Long Reach,,,,,,,,,,,Centium,,,,,01/03/2019,22/06/2019,BN,7.6,14.2,168,52.01586,1.23347
+2019,Home Farm Nacton,022 Swaley Walk,,,,,,,,,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,02/03/2019,21/06/2019,BN,7.6,14.2,167.8,52.01586,1.23347
+2019,Home Farm Nacton,T19 Long,,,,,,,,,,,,,,,,02/03/2019,21/06/2019,BN,7.2,14.2,167.8,52.01586,1.23347
+2019,Home Farm Nacton,Chapel,,,,,,,80,56,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,04/03/2019,,TM,4.7,,,52.01586,1.23347
+2019,Home Farm Nacton,Oaklands,,,,,,,80,56,,,Centium,,"Hallmark Zeon, Aphox ", Amistar,Non-intensive tillage,04/03/2019,,TM,4.7,,,52.01586,1.23347
+2020,Home Farm Nacton,G01 SwallowsNest,,,,,,,,,,,,,,,,12/02/2020,17/06/2020,AL,5.7,14.1,125.8,52.01586,1.23347
+2020,Home Farm Nacton,G02 Broomhill,,,,,,,,,,,,,,,,12/02/2020,17/06/2020,AL,5.7,14.1,125.8,52.01586,1.23347
+2020,Home Farm Nacton,019 Ransomes,,,,,,,,,,Y,Centium," Basagran, Tropotox", Aphox, Amistar,,11/03/2020,10/06/2020,AL,2.7,15,41.8,52.01586,1.23347
+2020,Home Farm Nacton,025 80 Acres,,,,,,8,6,13,,,Centium," Basagran, Tropotox", Aphox, Amistar,,11/03/2020,10/06/2020,AL,2.7,15,41.8,52.01586,1.23347
+2020,Home Farm Nacton,281 7ac Field,,,,,,,,,,,Centium," Basagran, Tropotox", Aphox, Amistar,,12/03/2020,17/06/2020,AL,3.9,15.5,45.4,52.01586,1.23347
+2020,Home Farm Nacton,S20 Johnny's Walk,,,,,,,,,,,,,,,,12/03/2020,17/06/2020,AL,3.9,15.5,45.4,52.01586,1.23347
+2020,Home Farm Nacton,004 Middle.,,,,,,,,,,Y,Centium," Basagran, Tropotox", Aphox, Amistar,,13/03/2020,17/06/2020,AL,5.6,15.5,45.4,52.01586,1.23347
+2020,Home Farm Nacton,005 Fisons,,,,,,,,,,Y,Centium," Basagran, Tropotox", Aphox, Amistar,,13/03/2020,17/06/2020,AL,5.6,15.5,45.4,52.01586,1.23347
+2020,Home Farm Nacton,006 Donkey,,,,,,,,,,Y,Centium," Basagran, Tropotox", Aphox, Amistar,,13/03/2020,17/06/2020,AL,5.6,15.5,45.4,52.01586,1.23347
+2020,Home Farm Nacton,068 Heath,,,,,,,,,,,Centium," Basagran, Tropotox", Aphox, Amistar,,14/03/2020,17/06/2020,BN,2.7,15.6,45.4,52.01586,1.23347
+2020,Home Farm Nacton,B15 Top/Bottom House,,,,,,,,,,Y,,, Aphox, Amistar,,14/03/2020,15/06/2020,BN,3.6,15.4,45.4,52.01586,1.23347
+2020,Home Farm Nacton,131 Russels,,,,,,,,,,Y,Centium,, Aphox, Amistar,,15/03/2020,18/06/2020,BN,5.5,15.7,60,52.01586,1.23347
+2020,Home Farm Nacton,138 Rectory,,,,,,,,,,,Centium,, Aphox, Amistar,,15/03/2020,18/06/2020,BN,3.2,15.7,60,52.01586,1.23347
+2020,Home Farm Nacton,B03 Hungry Hill,,,,,,,,,,Y,Centium," Basagran, Tropotox", Aphox, Amistar,,15/03/2020,15/06/2020,BN,2.1,15.5,44,52.01586,1.23347
+2020,Home Farm Nacton,B12 Covey,,,,,,,,,,Y,Centium,, Aphox, Amistar,,15/03/2020,16/06/2020,BN,3.8,15.6,44,52.01586,1.23347
+2020,Home Farm Nacton,B14 Waller,,,,,,,,,,Y,Centium," Basagran, Tropotox", Aphox, Amistar,,15/03/2020,16/06/2020,BN,4.9,15.6,44,52.01586,1.23347
+2020,Home Farm Nacton,305P Abbotts,,,,,,,,,,,Centium," Basagran, Tropotox", Aphox, Amistar,,16/03/2020,16/06/2020,BN,4.4,15.6,41.4,52.01586,1.23347
+2020,Home Farm Nacton,307P 14acs,,,,,,,,,,,Centium, Basagran, Aphox, Amistar,,16/03/2020,16/06/2020,BN,4.4,15.6,41.4,52.01586,1.23347
+2011,Home Farm Nacton,033 Barn,,,,,,48,22,4,,Y,, Basagran,,,Non-intensive tillage,,,,,,,52.01586,1.23347
+2011,Home Farm Nacton,069 Scots Barn,,,,,,48,22,4,,Y,, Basagran,,,Non-intensive tillage,,,,,,,52.01586,1.23347
+2011,Home Farm Nacton,101 27 Acres,,,,,,48,22,4,,N,, Basagran,,,Non-intensive tillage,,,,,,,52.01586,1.23347
+2011,Home Farm Nacton,120 Dutch Barns,,,,,,48,22,4,,N,, Basagran,,,Non-intensive tillage,,,,,,,52.01586,1.23347
+2020,Watson Farms,Stackyard,,,,,,,, ,,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,04/04/2020,27/06/2020,GE,6.1,,,52.37894,1.64132
+2020,Watson Farms,Walnut,,,,,,,,,,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,25/05/2020,09/08/2020,DN,6.8,,,52.37894,1.64132
+2020,Watson Farms,Square Wood,,,,,,,,,,, Nirvana,,"Hallmark Zeon, Aphox ", Amistar,Intensive tillage,,,,,,,52.37894,1.64132
