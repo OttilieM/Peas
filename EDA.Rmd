@@ -1,0 +1,690 @@
+---
+title: "EDA"
+output: html_notebook
+---
+
+
+```{r}
+#install.packages(c("FactoMineR", "factoextra", "ggfortify))
+
+#load libraries
+library(randomForest)
+library(tidyverse)
+library(corrplot)
+library(leaps)
+library(gbm)
+library(forcats)
+library(ggfortify)
+library("FactoMineR")
+library(caret)
+library(ranger)
+library(rsample)
+```
+
+```{r}
+#load data
+
+#this will need to be changed depending on where data is saved
+setwd("C:/Users/User/Documents/Data Science/Dissertation") 
+my_data <- read.csv("Clean data.csv")
+head(my_data)
+```
+
+
+```{r}
+#data cleaning
+
+#convert to factors
+my_data$Grower <- as.factor(my_data$Grower)
+my_data$K <- as.factor(my_data$K)
+my_data$P <- as.factor(my_data$P)
+my_data$Mg <- as.factor(my_data$Mg)
+my_data$Soil.texture <- as.factor(my_data$Soil.texture)
+my_data$Rolling.after.drilling <- as.factor(my_data$Rolling.after.drilling)
+my_data$Irrigatio <- as.factor(my_data$Irrigatio)
+my_data$Variety <- as.factor(my_data$Variety)
+my_data$Drilling.date <- as.Date(my_data$Drilling.date, format = '%d/%m/%Y')
+my_data$Harvest.date <- as.Date(my_data$Harvest.date, format = '%d/%m/%Y')
+my_data$Insecticides <- as.factor(my_data$Insecticides)
+my_data$Fungicides <- as.factor(my_data$Fungicides)
+my_data$Cultiavtions <- as.factor(my_data$Cultiavtions)
+my_data$Pre.emergence.Herbicide <- as.factor(my_data$Pre.emergence.Herbicide)
+my_data$Post.emergence.Herbicide <- as.factor(my_data$Post.emergence.Herbicide)
+
+#convert to numeric
+my_data$K.fert <- as.numeric(my_data$K.fert)
+my_data$P.fert <- as.numeric(my_data$P.fert)
+my_data$Mg.fert <- as.numeric(my_data$Mg.fert)
+
+#rename variables
+my_data <- my_data %>%
+  rename(
+    year = ï..Year,
+    grower = Grower,
+    field = Filed..name,
+    soil.texture = Soil.texture,
+    rolling = Rolling.after.drilling,
+    irrigation = Irrigatio
+  )
+```
+
+
+```{r}
+#clean up levels
+levels(my_data$soil.texture)
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="CL"] <- "Clay"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="Clay "] <- "Clay"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="CL"] <- "Clay Loam"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="LS"] <- "Sandy Loam"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="SZL"] <- "Sandy Loam"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="SCL"] <- "Silty Clay Loam"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="SL"] <- "Sandy Loam"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="sl"] <- "Sandy Loam"
+
+
+
+levels(my_data$rolling)
+levels(my_data$rolling)[levels(my_data$rolling)=="n"] <- "N"
+levels(my_data$rolling)[levels(my_data$rolling)=="No"] <- "N"
+levels(my_data$rolling)[levels(my_data$rolling)=="y"] <- "Y"
+
+levels(my_data$irrigation)
+levels(my_data$irrigation)[levels(my_data$irrigation)=="n"] <- "N"
+levels(my_data$irrigation)[levels(my_data$irrigation)=="no"] <- "N"
+levels(my_data$irrigation)[levels(my_data$irrigation)=="No"] <- "N"
+levels(my_data$irrigation)[levels(my_data$irrigation)=="Yes"] <- "Y"
+
+levels(my_data$Pre.emergence.Herbicide)
+levels(my_data$Post.emergence.Herbicide)
+levels(my_data$Post.emergence.Herbicide)[levels(my_data$Post.emergence.Herbicide)== " Basagran, Tropotox "] <- " Basagran, Tropotox"
+
+levels(my_data$Insecticides)
+levels(my_data$Insecticides)[levels(my_data$Insecticides)== " "] <- NA
+
+levels(my_data$Fungicides)
+levels(my_data$Post.emergence.Herbicide)[levels(my_data$Post.emergence.Herbicide)== " "] <- NA
+
+levels(my_data$Cultiavtions)
+levels(my_data$Cultiavtions)[levels(my_data$Cultiavtions)== "Intensive Tillage"] <- "Intensive tillage"
+levels(my_data$Cultiavtions)[levels(my_data$Cultiavtions)== "Ploughing, Non-intensive tillage"] <- "Non-intensive tillage, Ploughing"
+
+
+#new variable for type of pea
+
+my_data$type <- my_data$Variety
+
+levels(my_data$type)[levels(my_data$type)== "SH"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "FS"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BG"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BE"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "AA"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "CP"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "A4"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "RL"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "AS"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "GS"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "AN"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "AR"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "DM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "CE"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "AL"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "ST"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BA"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "TM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BU"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "MR"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "DN"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "CG"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BG3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "KM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "COD2"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "PR"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "IB"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BG2"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "GB"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "NA3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "NA3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "LM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "PS2"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "PS3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "MR3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "SM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BE2"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "E9"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BN"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "LB"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type) == "NL"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "RL3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "PM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "ST3"] <- "Field Pea"
+
+
+levels(my_data$type)[levels(my_data$type)== "GE2"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "IV1"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "BT"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "BT1"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "SL"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "GE"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "RT"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "IV"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "COD1"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "WX"] <- "Petis Pois"
+
+levels(my_data$type)
+levels(my_data$Variety)
+
+
+sort(table(my_data$Variety))
+table(my_data$Variety)
+
+levels(my_data$Variety)[levels(my_data$Variety)== "SH"] <- "Sherwood"
+levels(my_data$Variety)[levels(my_data$Variety)== "FS"] <- "Fashion"
+levels(my_data$Variety)[levels(my_data$Variety)== "BG"] <- "Bingo"
+levels(my_data$Variety)[levels(my_data$Variety)== "BE"] <- "Boogie"
+levels(my_data$Variety)[levels(my_data$Variety)== "AA"] <- "Amalfi"
+levels(my_data$Variety)[levels(my_data$Variety)== "CP"] <- "Compana"
+levels(my_data$Variety)[levels(my_data$Variety)== "A4"] <- "EBA411" 
+levels(my_data$Variety)[levels(my_data$Variety)== "RL"] <- "Ruler" 
+levels(my_data$Variety)[levels(my_data$Variety)== "AS"] <- "Other" 
+levels(my_data$Variety)[levels(my_data$Variety)== "GS"] <- "Other" 
+levels(my_data$Variety)[levels(my_data$Variety)== "AN"] <- "Annubis" 
+levels(my_data$Variety)[levels(my_data$Variety)== "AR"] <- "Other" 
+levels(my_data$Variety)[levels(my_data$Variety)== "DM"] <- "Other" 
+levels(my_data$Variety)[levels(my_data$Variety)== "CE"] <- "Ceresa" 
+levels(my_data$Variety)[levels(my_data$Variety)== "AL"] <- "Aloha"
+levels(my_data$Variety)[levels(my_data$Variety)== "ST"] <- "Standana"
+levels(my_data$Variety)[levels(my_data$Variety)== "BA"] <- "Banjo"
+levels(my_data$Variety)[levels(my_data$Variety)== "TM"] <- "Tomahawk"
+levels(my_data$Variety)[levels(my_data$Variety)== "BU"] <- "Butana" 
+levels(my_data$Variety)[levels(my_data$Variety)== "MR"] <- "Maurice" 
+levels(my_data$Variety)[levels(my_data$Variety)== "DN"] <- "Dancer" 
+levels(my_data$Variety)[levels(my_data$Variety)== "CG"] <- "Cargo"
+levels(my_data$Variety)[levels(my_data$Variety)== "BG3"] <- "Bingo"
+levels(my_data$Variety)[levels(my_data$Variety)== "KM"] <- "Kimberley"
+levels(my_data$Variety)[levels(my_data$Variety)== "COD2"] <- "Ruler" 
+levels(my_data$Variety)[levels(my_data$Variety)== "PR"] <- "Other" 
+levels(my_data$Variety)[levels(my_data$Variety)== "IB"] <- "Ibis" 
+levels(my_data$Variety)[levels(my_data$Variety)== "BG2"] <- "Bingo"
+levels(my_data$Variety)[levels(my_data$Variety)== "GB"] <- "Bingo"
+levels(my_data$Variety)[levels(my_data$Variety)== "NA3"] <- "Naches"
+levels(my_data$Variety)[levels(my_data$Variety)== "NA3"] <- "Naches"
+levels(my_data$Variety)[levels(my_data$Variety)== "LM"] <- "Other"
+levels(my_data$Variety)[levels(my_data$Variety)== "PS2"] <- "Persephone" 
+levels(my_data$Variety)[levels(my_data$Variety)== "PS3"] <- "Persephone" 
+levels(my_data$Variety)[levels(my_data$Variety)== "MR3"] <- "Maurice"
+levels(my_data$Variety)[levels(my_data$Variety)== "SM"] <- "SM"          
+levels(my_data$Variety)[levels(my_data$Variety)== "BE2"] <- "Boogie"
+levels(my_data$Variety)[levels(my_data$Variety)== "E9"] <- "EX0957"
+levels(my_data$Variety)[levels(my_data$Variety)== "BN"] <- "Boston"
+levels(my_data$Variety)[levels(my_data$Variety)== "LB"] <- "Other" 
+levels(my_data$Variety)[levels(my_data$Variety)== "NL"] <- "Other" 
+levels(my_data$Variety)[levels(my_data$Variety)== "RL3"] <- "Ruler"
+levels(my_data$Variety)[levels(my_data$Variety)== "PM"] <- "Premium"      
+levels(my_data$Variety)[levels(my_data$Variety)== "ST3"] <- "Standana"
+levels(my_data$Variety)[levels(my_data$Variety)== " "] <- NA
+
+levels(my_data$Variety)[levels(my_data$Variety)== "GE2"] <- "Geer" #Petit Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "IV1"] <- "Innovesa" #Petit Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "BT"] <- "Bartesa" #Petit Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "BT1"] <- "Bartesa" #Petit Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "SL"] <- "Selune" #3, Selune, Petit Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "GE"] <- "Geer" #Petit Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "RT"] <- "Retrovert" #2, Retrovert, Petit Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "IV"] <- "Innovesa" #2, Petit Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "COD1"] <- "COD1" #1, Petit Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "WX"] <- "Waverex" #Petit pois
+```
+
+
+```{r}
+#new variables for growing days
+my_data$days <- my_data$Harvest.date - my_data$Drilling.date
+
+my_data$days <- as.numeric(my_data$days)
+```
+
+
+
+```{r}
+#look at missing data for yield
+missingdata <- prop.table(table(is.na(my_data$Yield==0))) *100
+
+missingdata
+
+#7.67% missing yield values
+#best to remove them
+my_data <- subset(my_data, Yield!=0)
+```
+
+
+
+```{r}
+#convert year to factor
+my_data$year <- as.factor(my_data$year)
+
+#plot year with yield
+plot(my_data$year, my_data$Yield, main = "Variability in Yield from 2012-2020", xlab = "Year", ylab = "Yield (Tones per Ha)")
+
+#2015 had the largest variation in yield
+```
+
+
+```{r}
+#variation in yield by farm
+plot(my_data$grower, my_data$Yield)
+
+#calculate yield variance
+data <- my_data %>%
+    group_by(grower) %>%
+  summarise(yield_variance = max(Yield) - min(Yield))
+
+#plot yield variance with grower
+data %>%
+  mutate(grower = fct_reorder(grower, yield_variance)) %>%
+ggplot(aes(x=grower, y = yield_variance)) +
+  geom_bar(stat = "identity") +
+  coord_flip()
+
+
+#home farm nacton and benacre farms had highest variance
+```
+
+
+```{r}
+#this is just looking at home farm nacton
+Home <- my_data %>%
+  filter(grower == "Home Farm Nacton")
+
+plot(Home$year, Home$Yield)
+
+#yield variance by year for home farm nacton
+Home1 <- Home %>%
+    group_by(year) %>%
+  summarise(yield_variance = max(Yield) - min(Yield))
+
+#plot yield variance per year
+Home1 %>%
+ggplot(aes(x=year, y = yield_variance)) +
+  geom_bar(stat = "identity") +
+  coord_flip()
+
+#highest variance in 2019 and 2016
+```
+
+```{r}
+#just looking at benacre farms
+Benacre <- my_data %>%
+  filter(grower == "Benacre Farms")
+
+#yield variance by year for benacre farms
+Benacre1 <- Benacre %>%
+    group_by(year) %>%
+  summarise(yield_variance = max(Yield) - min(Yield))
+
+#plot yield variance per year
+Benacre1 %>%
+ggplot(aes(x=year, y = yield_variance)) +
+  geom_bar(stat = "identity") +
+  coord_flip()
+
+#highest variance in 2015
+```
+
+```{r}
+sort(table(my_data$grower))
+
+
+library(forcats)
+
+#plot number of data points for each farm
+ggplot(my_data,aes(x = fct_rev(fct_infreq(grower)))) + 
+	geom_bar(stat = 'count') +
+  coord_flip()
+
+
+#can conclude that those with the highest yield variance provided the most data
+```
+
+```{r}
+#look at variety and yield
+my_data <- subset(my_data, Variety!=0)
+
+Variety1 <- my_data[,c(21,22)]
+
+#calculate mean yield
+Variety1 <- Variety1 %>%
+  mutate(Variety = fct_reorder(Variety, Yield)) %>%
+  group_by(Variety) %>%
+  summarise(mean.var = mean(Yield))
+
+#plot mean yield and variety
+Variety1 %>%
+  mutate(Variety = fct_reorder(Variety, mean.var)) %>%
+  ggplot(aes(x=Variety, y=mean.var)) +
+  geom_bar(stat = "identity") +
+  coord_flip()
+
+```
+
+```{r}
+#look at soil texture
+levels(my_data$soil.texture)
+
+#remove missing values
+my_data <- my_data %>%
+   filter(soil.texture!= "NA")
+
+#plot yield and soil texture 
+my_data %>%
+  ggplot(aes(x=soil.texture, y=Yield)) +
+  geom_bar(stat = "identity") +
+  coord_flip()
+```
+
+
+```{r}
+#plot pH and yield
+my_data %>%
+  ggplot(aes(x=Ph, y = Yield)) +
+  geom_point(size=2)
+```
+
+```{r}
+par(mfrow=c(1,3)) #only works in r script
+
+
+#plot soil indexes and yield
+ggplot(my_data, aes(x=K, y = Yield)) +
+  geom_point(size=2)
+ggplot(my_data, aes(x=P, y = Yield)) +
+  geom_point(size=2)
+ggplot(my_data, aes(x=Mg, y = Yield)) +
+  geom_point(size=2)
+```
+
+```{r}
+#just looking at K
+data.K <- my_data
+
+#only want whole numbers
+data.K$K <- as.integer(data.K$K)
+
+#remove missing data
+data.K <- subset(data.K, K!="Na" )
+
+#plot k with k fertiliser
+ K <- data.K %>%
+  ggplot(aes(x=as.factor(K), y=K.fert)) +
+  geom_boxplot(fill = "cornflowerblue") +
+  labs(x = "K index", y = "K fertiliser (kg/ha)")+
+    geom_jitter(color="black", size=0.4, alpha=0.9)
+ 
+ K
+```
+
+
+```{r}
+#looking at the number of data points
+data.K1 <- my_data
+
+#want whole numbers
+data.K1$K <- as.integer(data.K1$K)
+
+#remove rows where K fert=0
+data.K1 <- subset(data.K1, K.fert=="0")
+
+table(data.K1$K, data.K1$K.fert)
+
+#plot total number of K fert used 
+ggplot(data.K1, aes(x=K, y=K.fert))+
+  geom_bar(stat = "identity")
+
+
+```
+
+
+
+```{r}
+#look at P
+data.P <- my_data
+
+#only want whole numbers
+data.P$P <- as.integer(data.P$P)
+
+#remove missing data
+data.P <- subset(data.P, P!="Na" )
+
+#plot p fert with p
+ P <- data.P %>%
+  ggplot(aes(x=as.factor(P), y=P.fert)) +
+  geom_boxplot(fill = "cornflowerblue") +
+  labs(x = "P index", y = "P fertiliser (kg/ha)")+
+    geom_jitter(color="black", size=0.4, alpha=0.9)
+ 
+P
+```
+
+```{r, echo=FALSE}
+#save chart
+ggsave
+
+P
+jpeg(file = "P.jpeg")
+P
+dev.off()
+```
+
+```{r}
+#plotting K fert and P fert with yield
+ggplot(my_data, aes(x=K.fert, y = Yield)) +
+  geom_point(size=2)
+ggplot(my_data, aes(x=P.fert, y = Yield)) +
+  geom_point(size=2)
+
+```
+
+
+```{r}
+#plotting weather data with yield
+ggplot(my_data, aes(x=Temp., y = Yield)) +
+  geom_point(size=2)
+
+ggplot(my_data, aes(x=Rainfall, y = Yield)) +
+  geom_point(size=2)
+
+```
+
+
+```{r}
+#plot farms data points on a map
+
+library(rnaturalearth)
+library(sf)
+library(rnaturalearthdata)
+#install.packages("rgeos")
+library(rgeos)
+#Download geographic data as a shapefile
+uk <- ne_countries(scale = 50, #smaller the scale, better the quality 
+                            country = "united kingdom", 
+                            returnclass = c("sf")) #sf is simple factors
+
+
+
+
+#UK map
+ggplot(uk) +
+  geom_sf(fill = "light green") +
+  theme_void()
+
+#zoom in to east anglia 
+area <- st_crop(uk, xmin = 0.5, xmax = 2,
+                    ymin = 51.9, ymax = 52.9)
+
+ggplot() +
+  geom_sf(data = area) +
+  theme_bw()
+```
+
+```{r}
+#subset data
+
+mapdata <- my_data[,c(2,25,26)]
+
+#removing missing data
+mapdata <- na.omit(mapdata)
+```
+
+```{r}
+# Convert long / lat into sf (needs to be the same as geographic data)
+data_points <- mapdata %>%
+  st_as_sf(coords = c("Long", "Lat"), crs = 4326)
+```
+
+```{r}
+# Plot geographic data with data points
+ggplot() + 
+  geom_sf(data = area, fill = "lightgreen") + 
+  geom_sf(data = data_points, shape = 21, size = 3, fill = "cornflowerblue") +
+  labs(title = "Data collection points") +
+  theme_void()
+  
+
+```
+
+
+```{r}
+#install.packages("ggspatial")
+library(ggspatial)
+library(ggplot2)
+
+#plot data points with map, adding north arrow and scale
+p1 <- ggplot() + 
+  geom_sf(data = uk, fill = "lightgreen"
+          ) + 
+  geom_sf(data = data_points, shape = 21, size = 2, fill = "cornflowerblue") +
+  annotation_scale(location = "bl", width_hint = 0.75) +
+    annotation_north_arrow(location = "bl",  which_north = "true", 
+       pad_x = unit(0.05, "in"), pad_y = unit(0.25, "in"),
+      style = north_arrow_fancy_orienteering) +
+  #geom_text(x=1.29, y=52.63, label = "Norwich", colour = "black") +
+  theme_void()
+
+#plot data points with map, adding north arrow and scale
+p2 <- ggplot() + 
+  geom_sf(data = area, fill = "lightgreen"
+          ) + 
+  geom_sf(data = data_points, shape = 21, size = 4, fill = "cornflowerblue") +
+  annotation_scale(location = "bl", width_hint = 0.75) +
+    annotation_north_arrow(location = "bl",  which_north = "true", 
+       pad_x = unit(0.05, "in"), pad_y = unit(0.25, "in"),
+      style = north_arrow_fancy_orienteering) +
+  #geom_text(x=1.29, y=52.63, label = "Norwich", colour = "black") +
+  theme_void()
+
+p1
+
+#adding city names to map
+p3 <- p2 +
+  annotate("text", x=1.29, y=52.63, label = "Norwich", colour = "black") +
+  annotate("text",x = 1.15, y = 52.06, label = "Ipswich")
+
+
+p3
+
+
+```
+
+
+```{r}
+#plotting rainfall
+
+categories <- cut(my_data$Rainfall, breaks = c(-Inf,50,75,100,150,200,300,Inf ), labels = c("0<50","50<75", "75<100", "100<150", "150<200", "200<300", "300+"))
+
+table(categories)
+
+
+plot(categories, col = "cornflowerblue", las = 2, ylab = "Number of fields") 
+jpeg(file = "rain.jpeg")
+plot(categories, col = "cornflowerblue", las = 2, ylab = "Number of fields") 
+```
+
+```{r}
+#plotting temperature
+hist(my_data$Temp., col = "cornflowerblue", main = "", xlab = "Average Temperature (degrees C)")
+jpeg(file = "temperature.jpeg")
+hist(my_data$Temp., col = "cornflowerblue", main = "", xlab = "Average Temperature (degrees C)")
+
+#hist(my_data$Rainfall)
+```
+
+
+```{r}
+#looking at how irrigation effected yield on different soil types
+data_ir <- my_data[,c(8,13,22)]
+
+data_ir <- data_ir %>%
+  filter(irrigation == "Y"|irrigation == "N")
+
+
+levels(data$irrigation)
+
+soilirr <- ggplot(data_ir, aes(x= soil.texture, y = Yield, fill = irrigation)) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = c("grey", "cornflower blue")) +
+  labs(x ="", fill = "Irrigation") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+
+soilirr
+```
+
+
+
+```{r}
+#plotting soil types, k fertiliser and yield (not a clear graph)
+data_K <- my_data[,c(9,8,22)]
+
+data_K <- na.omit(data_K)
+
+data_K <- data_K %>%
+  filter(K.fert!= 0)
+
+
+K.soil <- ggplot(data_K, aes(x=K.fert, y=Yield, colour = soil.texture, shape = soil.texture)) +
+  geom_point(size = 3) +
+  labs(x = "K fertiliser")
+
+K.soil
+```
+
+
+
+```{r}
+
+levels(my_data$irrigation)
+my_data$irrigation <- na.omit(my_data$irrigation)
+
+plot(my_data$irrigation, my_data$Yield)
+
+summary(my_data$irrigation)
+
+table(my_data$soil.texture, my_data$irrigation)
+```
+
+ 
+```{r}
+#plotting confidence intervals with pH and yield
+ggplot(my_data, aes(x=Ph, y = Yield)) +
+  geom_point()+
+  geom_smooth()
+
+```
+
+```{r}
+#plotting confidence intervals with growing days and yield
+ggplot(my_data, aes(x=days, y = Yield)) +
+  labs(x = "Growing days") +
+  geom_point()+
+  geom_smooth()
+
+```
+
