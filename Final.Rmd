@@ -1,0 +1,607 @@
+---
+title: "Final"
+output: html_notebook
+---
+
+```{r}
+#install.packages(c("FactoMineR", "factoextra", "ggfortify))
+
+#load libraries
+library(ggplot2) #graphics
+library(randomForest) #random forest
+library(dplyr) #better data manipulations
+library(tidyverse)
+library(corrplot)
+library(leaps)
+#library(tree)
+#library(randomForest)
+library(gbm)
+library(forcats)
+#library(tidyverse)
+#library(stats)
+library(ggfortify)
+#library(dplyr)
+library("FactoMineR")
+library("factoextra")
+#library(tree)
+library(caret)
+library(ranger)
+library(rsample)
+
+
+```
+
+```{r}
+#load data
+setwd("C:/Users/User/Documents/Data Science/Dissertation")
+my_data <- read.csv("Clean data.csv")
+head(my_data)
+```
+
+
+```{r}
+#data cleaning
+
+#convert to factors
+my_data$Grower <- as.factor(my_data$Grower)
+my_data$K <- as.factor(my_data$K)
+my_data$P <- as.factor(my_data$P)
+my_data$Mg <- as.factor(my_data$Mg)
+my_data$Soil.texture <- as.factor(my_data$Soil.texture)
+my_data$Rolling.after.drilling <- as.factor(my_data$Rolling.after.drilling)
+my_data$Irrigatio <- as.factor(my_data$Irrigatio)
+my_data$Variety <- as.factor(my_data$Variety)
+my_data$Drilling.date <- as.Date(my_data$Drilling.date, format = '%d/%m/%Y')
+my_data$Harvest.date <- as.Date(my_data$Harvest.date, format = '%d/%m/%Y')
+my_data$Insecticides <- as.factor(my_data$Insecticides)
+my_data$Fungicides <- as.factor(my_data$Fungicides)
+my_data$Cultiavtions <- as.factor(my_data$Cultiavtions)
+my_data$Pre.emergence.Herbicide <- as.factor(my_data$Pre.emergence.Herbicide)
+my_data$Post.emergence.Herbicide <- as.factor(my_data$Post.emergence.Herbicide)
+
+#convert to numeric
+#my_data$K <- as.numeric(my_data$K)
+#my_data$P <- as.numeric(my_data$P)
+#my_data$Mg <- as.numeric(my_data$Mg)
+my_data$K.fert <- as.numeric(my_data$K.fert)
+my_data$P.fert <- as.numeric(my_data$P.fert)
+my_data$Mg.fert <- as.numeric(my_data$Mg.fert)
+
+#rename variables
+my_data <- my_data %>%
+  rename(
+    year = ï..Year,
+    grower = Grower,
+    field = Filed..name,
+    soil.texture = Soil.texture,
+    rolling = Rolling.after.drilling,
+    irrigation = Irrigatio
+  )
+```
+
+
+```{r}
+#clean up levels
+levels(my_data$soil.texture)
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="CL"] <- "Clay"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="Clay "] <- "Clay"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="CL"] <- "Clay Loam"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="LS"] <- "Sandy Loam"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="SZL"] <- "Sandy Loam"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="SCL"] <- "Silty Clay Loam"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="SL"] <- "Sandy Loam"
+levels(my_data$soil.texture)[levels(my_data$soil.texture)=="sl"] <- "Sandy Loam"
+my_data$soil.texture[my_data$soil.texture==" "] <- NA
+my_data$soil.texture[my_data$soil.texture==""] <- NA
+
+
+levels(my_data$rolling)
+levels(my_data$rolling)[levels(my_data$rolling)=="n"] <- "N"
+levels(my_data$rolling)[levels(my_data$rolling)=="No"] <- "N"
+levels(my_data$rolling)[levels(my_data$rolling)=="y"] <- "Y"
+
+levels(my_data$irrigation)
+levels(my_data$irrigation)[levels(my_data$irrigation)=="n"] <- "N"
+levels(my_data$irrigation)[levels(my_data$irrigation)=="no"] <- "N"
+levels(my_data$irrigation)[levels(my_data$irrigation)=="No"] <- "N"
+levels(my_data$irrigation)[levels(my_data$irrigation)=="Yes"] <- "Y"
+
+levels(my_data$Pre.emergence.Herbicide)
+levels(my_data$Post.emergence.Herbicide)
+levels(my_data$Post.emergence.Herbicide)[levels(my_data$Post.emergence.Herbicide)== " Basagran, Tropotox "] <- " Basagran, Tropotox"
+
+levels(my_data$Insecticides)
+levels(my_data$Insecticides)[levels(my_data$Insecticides)== " "] <- NA
+
+levels(my_data$Fungicides)
+levels(my_data$Post.emergence.Herbicide)[levels(my_data$Post.emergence.Herbicide)== " "] <- NA
+
+levels(my_data$Cultiavtions)
+levels(my_data$Cultiavtions)[levels(my_data$Cultiavtions)== "Intensive Tillage"] <- "Intensive tillage"
+levels(my_data$Cultiavtions)[levels(my_data$Cultiavtions)== "Ploughing, Non-intensive tillage"] <- "Non-intensive tillage, Ploughing"
+
+
+#new variable for type of pea
+
+my_data$type <- my_data$Variety
+
+levels(my_data$type)[levels(my_data$type)== "SH"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "FS"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BG"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BE"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "AA"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "CP"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "A4"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "RL"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "AS"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "GS"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "AN"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "AR"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "DM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "CE"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "AL"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "ST"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BA"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "TM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BU"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "MR"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "DN"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "CG"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BG3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "KM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "COD2"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "PR"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "IB"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BG2"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "GB"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "NA3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "NA3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "LM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "PS2"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "PS3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "MR3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "SM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BE2"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "E9"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "BN"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "LB"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "NL"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "RL3"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "PM"] <- "Field Pea"
+levels(my_data$type)[levels(my_data$type)== "ST3"] <- "Field Pea"
+
+
+levels(my_data$type)[levels(my_data$type)== "GE2"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "IV1"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "BT"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "BT1"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "SL"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "GE"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "RT"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "IV"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "COD1"] <- "Petis Pois"
+levels(my_data$type)[levels(my_data$type)== "WX"] <- "Petis Pois"
+
+levels(my_data$type)
+levels(my_data$Variety)
+
+
+sort(table(my_data$Variety))
+table(my_data$Variety)
+
+levels(my_data$Variety)[levels(my_data$Variety)== "SH"] <- "Sherwood"
+levels(my_data$Variety)[levels(my_data$Variety)== "FS"] <- "Fashion"
+levels(my_data$Variety)[levels(my_data$Variety)== "BG"] <- "Bingo"
+levels(my_data$Variety)[levels(my_data$Variety)== "BE"] <- "Boogie"
+levels(my_data$Variety)[levels(my_data$Variety)== "AA"] <- "Amalfi"
+levels(my_data$Variety)[levels(my_data$Variety)== "CP"] <- "Compana"
+levels(my_data$Variety)[levels(my_data$Variety)== "A4"] <- "EBA411" #3
+levels(my_data$Variety)[levels(my_data$Variety)== "RL"] <- "Ruler" #3
+levels(my_data$Variety)[levels(my_data$Variety)== "AS"] <- "Other" #2, NA
+levels(my_data$Variety)[levels(my_data$Variety)== "GS"] <- "Other" #2
+levels(my_data$Variety)[levels(my_data$Variety)== "AN"] <- "Annubis" #1, Annubis
+levels(my_data$Variety)[levels(my_data$Variety)== "AR"] <- "Other" #3
+levels(my_data$Variety)[levels(my_data$Variety)== "DM"] <- "Other" #2
+levels(my_data$Variety)[levels(my_data$Variety)== "CE"] <- "Ceresa" #2, Ceresa
+levels(my_data$Variety)[levels(my_data$Variety)== "AL"] <- "Aloha"
+levels(my_data$Variety)[levels(my_data$Variety)== "ST"] <- "Standana"
+levels(my_data$Variety)[levels(my_data$Variety)== "BA"] <- "Banjo"
+levels(my_data$Variety)[levels(my_data$Variety)== "TM"] <- "Tomahawk" #2, Tomahawk
+levels(my_data$Variety)[levels(my_data$Variety)== "BU"] <- "Butana" #1, Butana
+levels(my_data$Variety)[levels(my_data$Variety)== "MR"] <- "Maurice" #2
+levels(my_data$Variety)[levels(my_data$Variety)== "DN"] <- "Dancer" #3
+levels(my_data$Variety)[levels(my_data$Variety)== "CG"] <- "Cargo"
+levels(my_data$Variety)[levels(my_data$Variety)== "BG3"] <- "Bingo"
+levels(my_data$Variety)[levels(my_data$Variety)== "KM"] <- "Kimberley"
+levels(my_data$Variety)[levels(my_data$Variety)== "COD2"] <- "Ruler" #1
+levels(my_data$Variety)[levels(my_data$Variety)== "PR"] <- "Other" #1, Prelado
+levels(my_data$Variety)[levels(my_data$Variety)== "IB"] <- "Ibis" #1, Ibis
+levels(my_data$Variety)[levels(my_data$Variety)== "BG2"] <- "Bingo"
+levels(my_data$Variety)[levels(my_data$Variety)== "GB"] <- "Bingo" #1
+levels(my_data$Variety)[levels(my_data$Variety)== "NA3"] <- "Naches"
+levels(my_data$Variety)[levels(my_data$Variety)== "NA3"] <- "Naches"
+levels(my_data$Variety)[levels(my_data$Variety)== "LM"] <- "Other"
+levels(my_data$Variety)[levels(my_data$Variety)== "PS2"] <- "Persephone" #Persephone
+levels(my_data$Variety)[levels(my_data$Variety)== "PS3"] <- "Persephone" #Persephone
+levels(my_data$Variety)[levels(my_data$Variety)== "MR3"] <- "Maurice"
+levels(my_data$Variety)[levels(my_data$Variety)== "SM"] <- "SM"             #10
+levels(my_data$Variety)[levels(my_data$Variety)== "BE2"] <- "Boogie"
+levels(my_data$Variety)[levels(my_data$Variety)== "E9"] <- "EX0957"
+levels(my_data$Variety)[levels(my_data$Variety)== "BN"] <- "Boston"
+levels(my_data$Variety)[levels(my_data$Variety)== "LB"] <- "Other" #2
+levels(my_data$Variety)[levels(my_data$Variety)== "NL"] <- "Other" #2
+levels(my_data$Variety)[levels(my_data$Variety)== "RL3"] <- "Ruler"
+levels(my_data$Variety)[levels(my_data$Variety)== "PM"] <- "Premium"        #8, Premium
+levels(my_data$Variety)[levels(my_data$Variety)== "ST3"] <- "Standana"
+levels(my_data$Variety)[levels(my_data$Variety)== " "] <- NA
+
+levels(my_data$Variety)[levels(my_data$Variety)== "GE2"] <- "Geer" #Petis Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "IV1"] <- "Innovesa" #Petis Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "BT"] <- "Bartesa" #Petis Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "BT1"] <- "Bartesa" #Petis Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "SL"] <- "Selune" #3, Selune, Petis Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "GE"] <- "Geer" #Petis Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "RT"] <- "Retrovert" #2, Retrovert, Petis Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "IV"] <- "Innovesa" #2, Petis Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "COD1"] <- "COD1" #1, Petis Pois
+levels(my_data$Variety)[levels(my_data$Variety)== "WX"] <- "Waverex" #Petit pois
+```
+
+
+```{r}
+#new variables for growing days
+my_data$days <- my_data$Harvest.date - my_data$Drilling.date
+
+my_data$days <- as.numeric(my_data$days)
+```
+
+
+```{r}
+#remove variable not useful for modeling
+data <- my_data[,-c(1,2,3,19,20,25,26)]
+
+#remove missing data
+data <- na.omit(data)
+
+
+#split data into test and train
+set.seed(123)
+data_split <- initial_split(data, prop = .7)
+
+train <- training(data_split)
+test <- testing(data_split)
+
+
+
+```
+
+
+```{r}
+#ensures factors of variety are in both test and train
+set.seed(123)
+uniquetrain <- unique(train$Variety)
+test <- test[test$Variety %in% uniquetrain,]
+```
+
+```{r}
+set.seed(123)
+uniquetrain <- unique( train$Post.emergence.Herbicide)
+test <- test[test$Post.emergence.Herbicide %in% uniquetrain,]
+```
+
+
+
+```{r}
+set.seed(1)
+
+m1 <- randomForest(Yield~., data = data, mtry =7)
+
+plot(m1)
+which.min(m1$mse) #32 trees
+sqrt(m1$mse[which.min(m1$mse)])
+
+#1.409103, with trees at optimum
+
+
+
+features <- setdiff(names(data), "Yield")
+
+set.seed(1)
+
+
+model1 <- tuneRF(x = data[features],
+                 y = data$Yield,
+                 ntreeTry = 32, #optimum
+                 mtryStart = 7, #same as in rf
+                 stepFactor = 2, #mtry/2 and *2
+                 improve = 0.01,
+                 trace = TRUE)
+#lowest OOb using 7 varialbles
+```
+
+
+
+```{r}
+#can use randomforest to see which variables make up the top 7
+set.seed(1)
+rf <- randomForest(Yield~., data = data, importance = TRUE)
+
+v1 <- varImpPlot(rf, type = 1, pch = 19)
+
+v1
+```
+
+
+
+
+
+```{r}
+#data visulisations
+
+#install.packages("randomForestSRC")
+library(randomForestSRC)
+
+#install.packages("ggRandomForests")
+library(ggRandomForests)
+
+
+set.seed(123)
+rfsrc_pea <- rfsrc(Yield~.,data = data)
+
+rfsrc_pea
+```
+
+```{r}
+##variable importance and minimal depth
+
+
+#plot the variable importance
+plot(gg_vimp(rfsrc_pea)) #don't like this plot
+
+
+
+#load data for minimal depth of a variable
+varsel_pea <- var.select(rfsrc_pea)
+
+gg_md <- gg_minimal_depth(varsel_pea)
+
+plot(gg_md) + theme_minimal() #creates a cut off point for the most important variables
+
+```
+
+
+```{r}
+##variable dependence
+
+gg_v <- gg_variable(rfsrc_pea)
+
+#we want the top ranked minimal depth variables only
+
+xvar <- gg_md$topvars
+
+xvar2 <- c("K.fert","Rainfall","P.fert","Temp.","Mg.fert")
+xvar1 <- c("K.fert", "Variety", "Rainfall", "P", "P.fert", "Temp.")
+
+#plot the variables quantitative list in a simple panel plot
+
+plot(gg_v, xvar=xvar2, panel = TRUE,
+     se=.95, span=1.2, alpha=.4) +
+  labs(y= "Pea Yield (tonnes/Ha)") 
+
+#variety and P are qualitative
+
+plot(gg_v, xvar = "P", points = FALSE,
+      se=FALSE, notch=FALSE, alpha=.4) +
+  labs(y= "Pea Yield (tonnes/Ha)") +
+  theme(axis.text.x = element_text(angle = 90))
+
+plot(gg_v, xvar = "Variety", points = FALSE,
+      se=FALSE, notch=FALSE, alpha=.4) +
+  labs(y= "Pea Yield (tonnes/Ha)") +
+  theme(axis.text.x = element_text(angle = 90))
+
+```
+
+
+
+```{r}
+
+#partial plots are risk adjusted alternatives to variable dependence
+
+
+partial_pea <- plot.variable(rfsrc_pea,
+                             xvar = xvar1,
+                             partial = TRUE, 
+                             sorted = TRUE, show.plots = TRUE, ylab = "Yield") + theme(axis.text.x = element_text(angle = 90))
+
+partial_pea <- plot.variable(rfsrc_pea,
+                             xvar = "Variety",
+                             partial = TRUE, 
+                             sorted = TRUE, 
+                             show.plots = TRUE, 
+                             ylab = "Yield",
+                             xlab = "",
+                             las = 3)
+```
+
+
+
+```{r}
+#variable interactions
+
+interaction_pea <- find.interaction(rfsrc_pea)
+#minimal depth variable interactions. higher values indicate lower interactiveity
+plot(gg_interaction(interaction_pea),
+     xvar=xvar1, panel = TRUE)
+
+```
+
+
+
+#using what I found for variable selection, can now apply this to randomforest to create predictions
+
+```{r}
+#using OOB variables
+set.seed(123)
+rf.1 <- randomForest(Yield~K.fert+Variety+Rainfall+P+P.fert+Temp.+Mg.fert,data = train)
+
+rf.model <- predict(rf.1, test)
+
+sqrt(mean(rf.model-data$Yield)^2)
+
+#this is the better model
+```
+
+```{r}
+#using minimal depth variables
+set.seed(123)
+rf.1 <- randomForest(Yield~K.fert+Rainfall+Temp.+Variety+Ph, data = train)
+
+rf.model <- predict(rf.1, test)
+
+sqrt(mean(rf.model-data$Yield)^2)
+
+
+```
+
+#linear regression
+
+```{r}
+#OOB
+
+lm1 <- lm(Yield~K.fert+Variety+Rainfall+P+P.fert+Temp.+Mg.fert,data = train)
+
+lm.model <- predict(lm1, test)
+
+sqrt(mean(lm.model-data$Yield)^2)
+#0.2886435
+```
+```{r}
+#minimal depth
+lm2 <- lm(Yield~K.fert+Rainfall+Temp.+Variety+Ph, data = train)
+
+lm2.model <- predict(lm2, test)
+
+sqrt(mean(lm2.model-data$Yield)^2)
+#0.3678951
+```
+
+
+## got a good prediction for all variables, now just looking at the ones we can control
+
+```{r}
+data1 <- data[,-c(1,2,3,4,5,18,19)]
+test1 <- test[,-c(1,2,3,4,5,18,19)]
+train1 <- train[,-c(1,2,3,4,5,18,19)]
+
+
+set.seed(1)
+
+m1 <- randomForest(Yield~., data = data1, mtry =5)
+
+plot(m1)
+which.min(m1$mse) #7 trees
+sqrt(m1$mse[which.min(m1$mse)])
+
+#1.307674, with trees at optimum
+
+
+
+features <- setdiff(names(data1), "Yield")
+set.seed(1)
+
+
+model1 <- tuneRF(x = data1[features],
+                 y = data1$Yield,
+                 ntreeTry = 7, #optimum
+                 mtryStart = 5, #same as in rf
+                 stepFactor = 2, #mtry/2 and *2
+                 improve = 0.01,
+                 trace = TRUE)
+#lowest OOb using 5 varialbles
+```
+
+
+```{r}
+#can use randomforest to see which variables make up the top 5
+set.seed(1)
+rf <- randomForest(Yield~., data = data1)
+
+varImpPlot(rf)
+```
+
+
+```{r}
+set.seed(123)
+rfsrc_pea1 <- rfsrc(Yield~.,data = data1)
+
+rfsrc_pea1
+
+#load data for minimal depth of a variable
+varsel_pea1 <- var.select(rfsrc_pea1)
+
+gg_md1 <- gg_minimal_depth(varsel_pea1)
+
+plot(gg_md1) + theme_minimal() 
+```
+
+
+
+```{r}
+#OOB for control variables
+set.seed(1)
+rf.2 <- randomForest(Yield~Variety+days+K.fert+P.fert+Post.emergence.Herbicide, data = train1)
+
+model.rf1 <- predict(rf.2, test1)
+sqrt(mean(model.rf1-data1$Yield)^2)
+
+#0.2878073
+```
+
+```{r}
+#Minimal depth for control variables
+set.seed(1)
+rf.3 <- randomForest(Yield~K.fert+days+Variety, data = train1)
+
+model.rf1 <- predict(rf.3, test1)
+sqrt(mean(model.rf1-data1$Yield)^2)
+
+#0.2325524
+
+
+#minimal depth better
+```
+
+```{r}
+results <- data.frame(name = c("Random Forest OOB", "Random Forest minimal depth", "Linear Regression OOB", "Linear regression minimal depth", "Random Forest adjusted OOB", "Random Forest adjusted minimal depth"), 
+                      RMSE =c(0.123, 0.227, 0.289, 0.368, 0.288, 
+                               0.233))
+
+results$name <- as.factor(results$name)
+
+RMSE.results <- results %>%
+  #ordering model names from best to worst
+  #mutate(name = fct_reorder(name, RMSE)) %>%
+  ggplot( aes(x=name, y=RMSE)) +
+  geom_bar(stat="identity", fill="cornflower blue", width=.4) +
+  #add bar labels
+  geom_text(aes(label=RMSE)) +
+  #flip the graph
+  coord_flip() +
+  xlab("Models") +
+  theme_bw() 
+
+RMSE.results
+```
+
+
+```{r, echo=FALSE}
+#save chart
+
+
+RMSE.results
+jpeg(file = "results.jpeg")
+
+RMSE.results
+dev.off()
+```
